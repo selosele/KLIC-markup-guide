@@ -102,4 +102,5 @@ z-index 속성 선언값은 ```1, 3, 10, 99999``` 등과 같은 통일되지 않
 ```
 .gnb { z-index: 1; }
 .gnb .depth2 { z-index: 5; }
+.layerPopup { z-index: 1000; }
 ```
