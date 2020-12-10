@@ -219,3 +219,27 @@ var gnb = $('#gnb')
 var gnb = $('#gnb'),
     dep01 = $('#gnb .depth1');
 ```
+
+### 4.3 파라미터(매개변수) 규칙
+
+쉬운 파악을 위해 공통적으로 사용되는 파라미터 표기법을 통일한다.
+
+```
+/* 후자로 통일 : 가급적이면 3글자로 표기할 것 */
+event = evt
+error = err
+index = idx
+```
+
+```
+/* 예시 */
+$(‘a’).on(‘click’, function(evt){})
+
+try {
+
+} catch(err) {
+
+}
+
+$(‘a’).each(function(idx){})
+```
