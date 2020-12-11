@@ -79,7 +79,7 @@ Editor : hong gil dong, 2020. 12. 11.
 산출물의 특정 부분을 수정했을 때는, 아래와 같이 **내용, 작업자명 날짜** 순서로 표기한다.
 
 ```
-.gnb { display: block; width: 100%; } /* IE에서 이러저러한 문제로 틀어지는 현상 수정, sehyun oh 201210 */
+.gnb { display: block; width: 100%; } /* 이러저러한 문제로 틀어지는 현상 수정, sehyun oh 201210 */
 ```
 
 ### 1.2. 권장하는 작업 순서
