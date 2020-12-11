@@ -26,6 +26,7 @@
     * [3.6. 통일된 공통 클래스 사용](#user-content-36-통일된-공통-클래스-사용)
     * [3.7. 태그 선택자 사용 지양](#user-content-37-태그-선택자-사용-지양)
     * [3.8. z-index 허용 선언값](#user-content-38-z-index-허용-선언값)
+    * [3.9. 속성값 축약](#user-content-39-속성값-)
 * [4. Javascript 코드 작성 규칙](#user-content-4-javascript-코드-작성-규칙)
     * [4.1. 주석 표기](#user-content-41-주석-표기)
     * [4.2. 따옴표 표기](#user-content-42-따옴표-표기)
