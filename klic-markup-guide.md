@@ -8,7 +8,7 @@
     * [1.1. 작업자 표기](#user-content-11-작업자-표기)
     * [1.2. 권장하는 작업 순서](#user-content-12-권장하는-작업-순서)
     * [1.3. 파일명](#user-content-13-파일명)
-        * [1.3.1. HTML/CSS/JS 파일명](#user-content-131-htmlcssjs-파일명)
+        * [1.3.1. HTML/CSS/Javascript 파일명](#user-content-131-htmlcssjavascript-파일명)
         * [1.3.2. 이미지 파일명](#user-content-132-이미지-파일명)
 * [2. HTML 코드 작성 규칙](#user-content-2-html-코드-작성-규칙)
     * [2.1. 마크업 오류 없는 HTML 파일](#user-content-21-마크업-오류-없는-html-파일)
@@ -96,7 +96,38 @@ Editor : hong gil dong, 2020. 12. 11.
 
 파일명 표기법에 대한 규칙을 기술한다.
 
-#### 1.3.1. HTML/CSS/JS 파일명
+#### 1.3.1. HTML/CSS/Javascript 파일명
+
+다음과 같은 퍼블리싱 산출물 파일명 표기 규칙을 준수한다.
+
+**HTML**
+
+```
+index.html - 메인
+guide.html - 스타일가이드
+sub.html - 스타일가이드 페이지가 없는 경우
+```
+
+**CSS**
+
+```
+fonts.css - 폰트
+basic.css - 공통으로 사용되는 요소
+con_com.css - 서브 콘텐츠 공통 요소
+layout.css - 공통 레이아웃
+main.css - 메인 콘텐츠
+main_widget.css - 템플릿 메인 위젯
+sub.css - 서브 레이아웃 및 서브 콘텐츠
+```
+
+**Javascript**
+
+```
+common.js - 공통으로 사용되는 요소 (개발자가 기능 구현을 위해 넣은 코드가 대부분이고, 퍼블리싱단에서는 제일 아래에 넣도록 한다.)
+layout.js - 공통 레이아웃
+main.js - 메인 콘텐츠
+sub.js - 서브 레이아웃 및 서브 콘텐츠
+```
 
 #### 1.3.2. 이미지 파일명
 
