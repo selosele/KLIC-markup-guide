@@ -323,6 +323,28 @@ z-index 속성 선언값은 ```1, 3, 10, 999, 9999``` 등과 같은 통일되지
 .gnb .depth2 { z-index: 5; }
 ```
 
+### 3.9. 속성값 축약
+
+CSS 가독성 향상을 위해 다음과 같이 속성값을 축약한다.
+
+**축약 전**
+
+```
+color: #ffffff
+top: 0px
+margin: 20px 20px 20px 20px
+padding: 20px 30px 20px 30px
+```
+
+**축약 후**
+
+```
+color: #fff
+top: 0 /* 속성값이 0일 경우 단위를 표기하지 않는다. */
+margin: 20px
+padding: 20px 30px /* 상 우 하 좌의 속성값이 동일하면 축약한다. */
+```
+
 ---
 
 ## 4. Javascript 코드 작성 규칙
