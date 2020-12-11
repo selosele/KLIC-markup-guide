@@ -105,8 +105,8 @@ Editor : hong gil dong, 2020. 12. 11.
 
 ```
 index.html - 메인
-guide.html - 스타일가이드
-sub.html - 스타일가이드 페이지가 없는 경우
+guide.html - 서브 레이아웃 및 스타일가이드
+sub.html - 스타일가이드 페이지가 없이 서브 레이아웃만 있는 경우
 ```
 
 **CSS**
