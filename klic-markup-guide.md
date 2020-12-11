@@ -14,7 +14,7 @@
     * [2.1. 마크업 오류 없는 HTML 파일](#user-content-21-마크업-오류-없는-html-파일)
     * [2.2. 주석 표기](#user-content-22-주석-표기)
     * [2.3. 들여쓰기](#user-content-23-들여쓰기)
-    * [2.4. 기본 언어 표시](#user-content-24-기본-언어-)
+    * [2.4. 기본 언어 표시](#user-content-24-기본-언어-표시)
     * [2.5. ID값 선언](#user-content-25-id값-선언)
 * [3. CSS 코드 작성 규칙](#user-content-3-css-코드-작성-규칙)
     * [3.1. 주석 표기](#user-content-31-주석-표기)
