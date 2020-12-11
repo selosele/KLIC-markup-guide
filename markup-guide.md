@@ -59,7 +59,7 @@ Editor : hong gil dong, 2020. 12. 11.
 
 ### 1.4 들여쓰기 규칙
 
-CSS/Javascript 코드에 대한 들여쓰기는 탭(Tab)키를 사용한 4칸 들여쓰기로 통일한다.
+HTML/Javascript 코드에 대한 들여쓰기는 탭(Tab)키를 사용한 4칸 들여쓰기로 통일한다.
 
 ```
 <!-- 금지 -->
