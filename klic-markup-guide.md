@@ -214,8 +214,8 @@ Javascript 작성을 위해서 선언한 ID값의 경우, 아래와 같이 CSS �
 ID값은 첫 글자를 영문 소문자로, 각 단어의 첫 글자를 대문자로 표기하는 camelCase 기법을 따른다.
 
 ```
-#popup_slider { } (X)
-#popupSlider { } (O)
+#total_search { } (X)
+#totalSearch { } (O)
 ```
 
 ---
