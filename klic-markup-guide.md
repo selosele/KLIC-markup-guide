@@ -326,9 +326,9 @@ CSS 가독성 향상을 위해 다음과 같이 속성값을 축약한다.
 
 ```
 color: #ffffff
-top: 0px
-margin: 20px 20px 20px 20px
-padding: 20px 30px 20px 30px
+top: 0rem
+margin: 2rem 2rem 2rem 2rem
+padding: 2rem 3rem 2rem 3rem
 ```
 
 **축약 후**
@@ -336,8 +336,8 @@ padding: 20px 30px 20px 30px
 ```
 color: #fff
 top: 0 /* 속성값이 0일 경우 단위를 표기하지 않는다. */
-margin: 20px
-padding: 20px 30px /* 상 우 하 좌의 속성값이 동일하면 축약한다. */
+margin: 2rem
+padding: 2rem 3rem /* 상 우 하 좌의 속성값이 동일하면 축약한다. */
 ```
 
 ### 3.9. z-index 허용 선언값
