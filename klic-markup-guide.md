@@ -28,6 +28,7 @@
     * [3.8. 태그 선택자 사용 지양](#user-content-38-태그-선택자-사용-지양)
     * [3.9. 속성값 축약](#user-content-39-속성값-축약)
     * [3.10. z-index 허용 선언값](#user-content-310-z-index-허용-선언값)
+    * [3.11. !important 선언 사용 금지](#user-content-311-important-선언-사용-금지)
 * [4. Javascript 코드 작성 규칙](#user-content-4-javascript-코드-작성-규칙)
     * [4.1. 주석 표기](#user-content-41-주석-표기)
     * [4.2. 들여쓰기](#user-content-42-들여쓰기)
@@ -402,13 +403,13 @@ z-index 속성 선언값은 ```1, 3, 10, 999, 9999``` 등과 같은 통일되지
 
 ### 3.11. !important 선언 사용 금지
 
-```!important``` 선언은 자연스러운 스타일 우선순위를 무시하고 가장 높은 우선 순위를 가지게 한다. 이로 인해 우선순위가 꼬여서 수정 및 유지보수 작업에 애로사항이 있을 수 있으니 절대 사용하지 않도록 하며, 스타일 우선순위 규칙에 맞게 CSS 코드를 작성하도록 한다.
+```!important``` 선언은 자연스러운 스타일 우선순위를 무시하고 가장 높은 우선 순위를 가지게 한다. 이로 인해 우선순위가 꼬여서 수정 및 유지보수 작업에 애로사항이 있을 수 있으니 절대 사용하지 않도록 하며, 스타일 우선순위 규칙에 맞게 CSS 코드를 작성하는 습관을 가진다.
 
 단, Javascript에서 정의된 스타일은 CSS 파일보다 높은 우선 순위를 가지므로, ```!important``` 선언으로 초기화해줄 수 있다.
 
 **참고**
 
-[https://opentutorials.org/module/484/4149](CSS 적용 우선순위) - opentutorials.org
+[CSS 적용 우선순위](https://opentutorials.org/module/484/4149) - opentutorials.org
 
 ---
 
