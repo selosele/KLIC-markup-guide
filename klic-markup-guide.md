@@ -129,7 +129,7 @@ common.js - 공통으로 사용되는 요소 (개발자가 기능 구현을 위�
 layout.js - 공통 레이아웃
 main.js - 메인 콘텐츠
 sub.js - 서브 레이아웃 및 서브 콘텐츠
-con_com.css - 서브 콘텐츠 공통 요소
+con_com.js - 서브 콘텐츠 공통 요소
 board.js - 게시판/로그인 폼
 ```
 
