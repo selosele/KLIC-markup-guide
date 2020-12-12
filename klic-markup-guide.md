@@ -114,11 +114,11 @@ sub.html - 스타일가이드 페이지 없이 서브 레이아웃만 있는 경
 ```
 fonts.css - 폰트
 basic.css - 공통으로 사용되는 요소
-con_com.css - 서브 콘텐츠 공통 요소
 layout.css - 공통 레이아웃
 main.css - 메인 콘텐츠
 main_widget.css - 템플릿 메인 위젯
 sub.css - 서브 레이아웃 및 서브 콘텐츠
+con_com.css - 서브 콘텐츠 공통 요소
 board.css - 게시판/로그인 폼
 ```
 
@@ -129,6 +129,7 @@ common.js - 공통으로 사용되는 요소 (개발자가 기능 구현을 위�
 layout.js - 공통 레이아웃
 main.js - 메인 콘텐츠
 sub.js - 서브 레이아웃 및 서브 콘텐츠
+con_com.css - 서브 콘텐츠 공통 요소
 board.js - 게시판/로그인 폼
 ```
 
