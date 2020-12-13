@@ -6,10 +6,9 @@
 * [개정 이력](#user-content-개정-이력)
 * [1. 공통 규칙](#user-content-1-공통-규칙)
     * [1.1. 작업자 표기](#user-content-11-작업자-표기)
-    * [1.2. 권장하는 작업 순서](#user-content-12-권장하는-작업-순서)
-    * [1.3. 파일명](#user-content-13-파일명)
-        * [1.3.1. HTML/CSS/Javascript 파일명](#user-content-131-htmlcssjavascript-파일명)
-        * [1.3.2. 이미지 파일명](#user-content-132-이미지-파일명)
+    * [1.2. 파일명](#user-content-13-파일명)
+        * [1.2.1. HTML/CSS/Javascript 파일명](#user-content-121-htmlcssjavascript-파일명)
+        * [1.2.2. 이미지 파일명](#user-content-122-이미지-파일명)
 * [2. HTML 코드 작성 규칙](#user-content-2-html-코드-작성-규칙)
     * [2.1. 마크업 오류 없는 HTML 파일](#user-content-21-마크업-오류-없는-html-파일)
     * [2.2. 주석 표기](#user-content-22-주석-표기)
@@ -83,21 +82,11 @@ Editor : hong gil dong, 2020. 12. 11.
 .gnb { display: block; width: 100%; } /* 이러저러한 문제로 틀어지는 현상 수정, sehyun oh 201210 */
 ```
 
-### 1.2. 권장하는 작업 순서
-
-보다 체계적인 작업 체계 확립과 공통적으로 발생하는 실수 최소화를 위한 권장하는 작업 순서를 기술한다.
-
-1. [마크업 오류 검사 (W3C Validator/웹와치 사용)](#user-content-21-마크업-오류-없는-html-파일)
-2. 반응형 코드 작성
-3. 웹 호환성 테스트
-4. 웹 접근성 테스트 (OpenWAX/수동 검사)
-5. **최종적으로 하나의 페이지 작업 완료**
-
-### 1.3. 파일명
+### 1.2. 파일명
 
 파일명 표기법에 대한 규칙을 기술한다.
 
-#### 1.3.1. HTML/CSS/Javascript 파일명
+#### 1.2.1. HTML/CSS/Javascript 파일명
 
 다음과 같은 퍼블리싱 산출물 파일명 표기 규칙을 준수한다.
 
@@ -133,7 +122,7 @@ board.js - 게시판/로그인 폼
 sub.js - 서브 레이아웃 및 서브 콘텐츠
 ```
 
-#### 1.3.2. 이미지 파일명
+#### 1.2.2. 이미지 파일명
 
 **서브 콘텐츠**
 
