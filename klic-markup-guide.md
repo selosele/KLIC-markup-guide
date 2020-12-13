@@ -6,7 +6,7 @@
 * [개정 이력](#user-content-개정-이력)
 * [1. 공통 규칙](#user-content-1-공통-규칙)
     * [1.1. 작업자 표기](#user-content-11-작업자-표기)
-    * [1.2. 파일명](#user-content-13-파일명)
+    * [1.2. 파일명](#user-content-12-파일명)
         * [1.2.1. HTML/CSS/Javascript 파일명](#user-content-121-htmlcssjavascript-파일명)
         * [1.2.2. 이미지 파일명](#user-content-122-이미지-파일명)
 * [2. HTML 코드 작성 규칙](#user-content-2-html-코드-작성-규칙)
