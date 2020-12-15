@@ -35,7 +35,6 @@
     * [4.2. 들여쓰기](#user-content-42-들여쓰기)
     * [4.3. 따옴표 표기](#user-content-43-따옴표-표기)
     * [4.4. 줄바꿈](#user-content-44-줄바꿈)
-    * [4.5. 파라미터(매개변수)](#user-content-45-파라미터매개변수)
     
 ---
 
@@ -548,26 +547,4 @@ var gnb = $('#gnb')
 ```
 var gnb = $('#gnb'),
     dep01 = $('#gnb .depth1');
-```
-
-### 4.5. 파라미터(매개변수)
-
-쉬운 파악을 위해 공통적으로 사용되는 파라미터 표기법을 통일한다.
-
-**후자로 통일 : 가급적이면 3글자로 표기할 것**
-
-* event = evt
-* error = err
-* index = idx
-
-```
-$('a').on('click', function(evt){})
-
-try {
-
-} catch(err) {
-
-}
-
-$('a').each(function(idx){})
 ```
