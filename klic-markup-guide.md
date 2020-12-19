@@ -6,8 +6,8 @@
 * [개정 이력](#user-content-개정-이력)
 * [1. 공통 규칙](#user-content-1-공통-규칙)
     * [1.1. 작업자 표기](#user-content-11-작업자-표기)
-    * [1.2. 파일명](#user-content-12-파일명)
-        * [1.2.1. HTML/CSS/Javascript 파일명](#user-content-121-htmlcssjavascript-파일명)
+    * [1.2. 네이밍](#user-content-12-네이밍)
+        * [1.2.1. HTML/CSS/Javascript ](#user-content-121-htmlcssjavascript-파일명)
         * [1.2.2. 이미지 파일명](#user-content-122-이미지-파일명)
 * [2. HTML 코드 작성 규칙](#user-content-2-html-코드-작성-규칙)
     * [2.1. 마크업 오류 없는 HTML 파일](#user-content-21-마크업-오류-없는-html-파일)
@@ -81,9 +81,7 @@ Editor : hong gil dong, 2020. 12. 11.
 .gnb { display: block; width: 100%; } /* 이러저러한 문제로 틀어지는 현상 수정, sehyun oh 201210 */
 ```
 
-### 1.2. 파일명
-
-파일명 표기법에 대한 규칙을 기술한다.
+### 1.2. 네이밍
 
 #### 1.2.1. HTML/CSS/Javascript 파일명
 
@@ -153,6 +151,12 @@ btn_search_02.png <!-- 동일한 이름의 경우 숫자로 구분해준다. -->
 btn_more.PNG (X)
 btn_more.png (O)
 ```
+
+#### 1.2.3. 기본 HTML 레이아웃 구조
+
+다음은 HTML의 기본 구조를 나타낸 것이다.
+
+<!-- ![HTML 기본 구조](ㅇㅇ) -->
 
 ---
 
