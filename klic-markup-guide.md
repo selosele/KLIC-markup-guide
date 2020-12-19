@@ -530,7 +530,7 @@ Javascript 코드에 대한 들여쓰기는 탭(Tab)키를 사용한 4칸 들여
 
 ```javascript
 $('a').on('click', function(evt) {
-  evt.preventDefault(); <!-- space bar(스페이스 바)키를 사용한 2칸 들여쓰기 -->
+  evt.preventDefault(); /* space bar(스페이스 바)키를 사용한 2칸 들여쓰기 */
 });
 ```
 
@@ -540,7 +540,7 @@ space bar(스페이스 바)키를 사용한 2칸 들여쓰기는 들여쓰기의
 
 ```javascript
 $('a').on('click', function(evt) {
-    evt.preventDefault(); <!-- 탭(Tab)키를 사용한 4칸 들여쓰기 -->
+    evt.preventDefault(); /* 탭(Tab)키를 사용한 4칸 들여쓰기 */
 });
 ```
 
