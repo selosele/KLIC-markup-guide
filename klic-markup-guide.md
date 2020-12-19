@@ -9,6 +9,7 @@
     * [1.2. 네이밍](#user-content-12-네이밍)
         * [1.2.1. HTML/CSS/Javascript ](#user-content-121-htmlcssjavascript-파일명)
         * [1.2.2. 이미지 파일명](#user-content-122-이미지-파일명)
+        * [1.2.3. 기본 HTML 레이아웃 구조](#user-content-123-기본-html-레이아웃-구조)
 * [2. HTML 코드 작성 규칙](#user-content-2-html-코드-작성-규칙)
     * [2.1. 마크업 오류 없는 HTML 파일](#user-content-21-마크업-오류-없는-html-파일)
     * [2.2. 주석 표기](#user-content-22-주석-표기)
