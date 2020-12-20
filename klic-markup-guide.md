@@ -301,7 +301,7 @@ class 속성은 태그의 필수 속성들 마지막에 선언해주고, id 속�
 ↓ - &darr;
 ```
 
-<a href="https://www.w3schools.com/charsets/ref_html_entities_4.asp" target="_blank" title="새창">이곳</a>에서 Entity 코드를 확인할 수 있다.
+<a href="https://www.w3schools.com/charsets/ref_html_entities_4.asp" target="_blank" title="새창" rel="noopener nofollow">이곳</a>에서 Entity 코드를 확인할 수 있다.
 
 ---
 
