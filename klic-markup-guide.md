@@ -483,7 +483,7 @@ CSS 가독성 향상을 위해 다음과 같이 속성값을 축약한다.
 
 ```css
 color: #ffffff
-top: 0rem
+top: 0px
 margin: 2rem 2rem 2rem 2rem
 padding: 2rem 3rem 2rem 3rem
 ```
