@@ -115,7 +115,7 @@ sub_cnt.css - 템플릿 서브 콘텐츠
 **Javascript**
 
 ```
-common.js - 공통 요소 (개발자가 기능 구현을 위해 넣은 코드가 대부분이고, 퍼블리싱단에서 코드 추가가 필요하면 제일 아래에 넣도록 한다.)
+common.js - 공통 요소
 layout.js - 공통 레이아웃
 main.js - 메인 콘텐츠
 con_com.js - 서브 콘텐츠 공통 요소
