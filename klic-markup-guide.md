@@ -37,6 +37,7 @@
   - [4.2. 들여쓰기](#42-들여쓰기)
   - [4.3. 따옴표 표기](#43-따옴표-표기)
   - [4.4. 줄바꿈](#44-줄바꿈)
+- [참고 자료](#참고-자료)
     
 ---
 
@@ -597,3 +598,10 @@ var gnb = $('#gnb')
 var gnb = $('#gnb'),
     dep01 = $('#gnb .depth1');
 ```
+
+---
+
+## 참고 자료
+
+* [NHN 코딩 컨벤션](https://nuli.navercorp.com/data/convention/NHN_Coding_Conventions_for_Markup_Languages.pdf)
+* [KLIC 퍼블리싱 스타일가이드](https://www.klic.co.kr/pub/guide/KLIC_Guide.html)
