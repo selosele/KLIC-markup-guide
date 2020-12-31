@@ -597,5 +597,5 @@ var gnb = $('#gnb'),
 
 ## 참고 자료
 
-* [NHN 코딩 컨벤션](https://nuli.navercorp.com/data/convention/NHN_Coding_Conventions_for_Markup_Languages.pdf)
+* [NHN 코딩 컨벤션](https://nuli.navercorp.com/data/convention/NHN_Coding_Conventions_for_Markup_Languages.pdf){:target="_blank"}
 * [KLIC 퍼블리싱 스타일가이드](https://www.klic.co.kr/pub/guide/KLIC_Guide.html)
