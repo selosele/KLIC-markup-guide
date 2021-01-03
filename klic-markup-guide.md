@@ -453,7 +453,7 @@ CSS 코드를 작성할 때는 들여쓰기를 하지 않는다.
 
 태그명을 바꿀 시 틀어지는 현상과 이를 바로잡는 시간을 최소화하기 위해 태그 선택자 사용을 지양하며, 어떤 태그로 변경해도 문제없게 작업하도록 한다. 단, ```li```, ```td``` 등과 같은 사용 빈도가 높은 태그는 사용할 수 있다.
 
-**지양**
+**비권장**
 
 ```css
 div ul li a { }
@@ -461,7 +461,7 @@ div ul li a { }
 input[type="text"] { } /* 기능 구현을 위해 다른 type 속성이 요구될 수 있다. */
 ```
 
-**지향**
+**권장**
 
 ```css
 .box .list li a { }
@@ -536,8 +536,8 @@ Javascript 주석은 아래와 같이 표기하며, 주석 기호와 내용 사�
 특정 단락을 주석 처리하는 경우 아래와 같이 블록 주석을 사용할 수 있다.
 
 ```javascript
-/* $('a').on('click', function(evt) {
-    evt.preventDefault();
+/* $('a').on('click', function() {
+    $(this).addClass('active');
 }); */
 ```
 
@@ -548,8 +548,8 @@ Javascript 코드에 대한 들여쓰기는 Tab(탭)키를 사용한 4칸 들여
 **금지**
 
 ```javascript
-$('a').on('click', function(evt) {
-  evt.preventDefault(); /* Space bar(스페이스 바)키를 사용한 2칸 들여쓰기 */
+$('a').on('click', function() {
+  $(this).addClass('active'); /* Space bar(스페이스 바)키를 사용한 2칸 들여쓰기 */
 });
 ```
 
@@ -558,8 +558,8 @@ Space bar(스페이스 바)키를 사용한 2칸 들여쓰기는 들여쓰기의
 **허용**
 
 ```javascript
-$('a').on('click', function(evt) {
-    evt.preventDefault(); /* Tab(탭)키를 사용한 4칸 들여쓰기 */
+$('a').on('click', function() {
+    $(this).addClass('active'); /* Tab(탭)키를 사용한 4칸 들여쓰기 */
 });
 ```
 
