@@ -158,11 +158,11 @@ btn_more.png (O)
 
 다음 그림은 기본 HTML 레이아웃을 나타낸 것이다.
 
-![기본 HTML 레이아웃 구조](/assets/images/default_layout.png)
+![기본 HTML 레이아웃 구조](assets/images/default_layout.png)
 
 다음 그림은 기본 메인 템플릿 레이아웃을 나타낸 것이다.
 
-![기본 메인 템플릿 레이아웃 구조](/assets/images/template_layout.png)
+![기본 메인 템플릿 레이아웃 구조](assets/images/template_layout.png)
 
 ```.MC_wrap```과 ```.MC_box```는 개수에 제한이 없고, 한 개밖에 없어도 숫자 1을 표기하며, 디자인 상 ```.MC_box```를 감쌀 필요 없을 경우 ```.MC_wrap```을 생략할 수 있다. ```.MC_box```에 들어가는 각 위젯의 클래스명은 아래와 같다.
 
