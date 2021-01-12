@@ -494,9 +494,9 @@ px|rem|비고
 15px|0.75rem|
 16px|0.8rem|
 17px|0.85rem|
-18px|0.9rem|1024px 이하 초기 단위
-19px|0.95rem|1440px 이하 초기 단위
-20px|1rem|웹 화면 초기 단위
+18px|0.9rem|1024px 이하
+19px|0.95rem|1440px 이하
+20px|1rem|웹 화면
 21px|1.05rem|
 22px|1.1rem|
 23px|1.15rem|
