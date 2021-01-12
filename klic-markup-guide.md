@@ -215,6 +215,8 @@ ID명은 첫 글자를 영문 소문자로, 각 단어의 첫 글자를 대문�
 
 모든 HTML 파일의 최종본은 [W3C Validator](https://validator.w3.org/unicorn/?ucn_lang=ko)를 이용한 유효성 검사를 통과한 상태여야 한다. 태그의 열고 닫는 부분 누락 문제, ID명 중복 선언 문제 등과 같은 기초적인 오류를 사전에 방지하는 것은 기본적으로 준수해야 하는 사항 중에 하나이다.
 
+로컬 환경에서 검사할 땐 [이곳](https://validator.w3.org/nu/)을 이용하면 된다.
+
 ### 2.2. 주석 표기
 
 HTML 주석은 아래와 같이 표기하며, 주석 기호와 내용 사이에 한 칸의 공백을 둔다.
@@ -306,7 +308,7 @@ class 속성은 태그의 필수 속성들 마지막에 선언해주고, id 속�
 
 ### 3.1. 유효성 오류 없는 CSS 파일
 
-모든 CSS 파일의 최종본은 [W3C Validator](https://validator.w3.org/unicorn/?ucn_lang=ko)를 이용한 유효성 검사를 통과한 상태여야 한다.
+모든 CSS 파일의 최종본은 [W3C Validator](https://validator.w3.org/unicorn/?ucn_lang=ko)를 이용한 유효성 검사를 통과한 상태여야 한다. 로컬 환경에서 검사할 땐 [이곳](https://validator.w3.org/nu/)을 이용하면 된다.
 
 ### 3.2. 주석 표기
 
