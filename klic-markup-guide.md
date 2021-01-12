@@ -39,7 +39,7 @@
 - [4. JS 코드 작성 규칙](#4-js-코드-작성-규칙)
   - [4.1. 주석 표기](#41-주석-표기)
   - [4.2. 들여쓰기](#42-들여쓰기)
-- [참고 자료](#참고-자료)
+- [참고 사이트](#참고-사이트)
     
 ---
 
@@ -631,7 +631,7 @@ $('a').on('click', function() {
 
 ---
 
-## 참고 자료
+## 참고 사이트
 
 * [NHN 코딩 컨벤션](https://nuli.navercorp.com/data/convention/NHN_Coding_Conventions_for_Markup_Languages.pdf)
 * [KLIC 퍼블리싱 스타일가이드](https://www.klic.co.kr/pub/guide/KLIC_Guide.html)
