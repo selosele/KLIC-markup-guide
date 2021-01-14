@@ -89,41 +89,41 @@ Edit : hong gil dong, 2020. 12. 11.
 
 #### 1.2.1. HTML/CSS/JS 파일명
 
-다음과 같은 퍼블리싱 산출물 파일명 표기 규칙을 준수한다.
+다음과 같은 파일명 표기 규칙을 준수한다.
 
 **HTML**
 
-```
-index.html - 메인
-guide.html - 서브 레이아웃 및 스타일가이드
-sub.html - 스타일가이드 페이지 없이 서브 레이아웃만 있는 경우
-```
+파일명|용도
+--- | ---
+index.html|메인
+guide.html|서브 레이아웃 및 스타일가이드
+sub.html|스타일가이드 페이지 없이 서브 레이아웃만 있는 경우
 
 **CSS**
 
-```
-basic.css - 공통 요소
-fonts.css - 폰트
-layout.css - 공통 레이아웃
-main.css - 메인 공통 콘텐츠
-main_widget.css - 템플릿 메인 위젯
-main_cnt.css - 템플릿 메인 콘텐츠
-con_com.css - 서브 콘텐츠 공통 요소
-board.css - 게시판/로그인 폼
-sub.css - 서브 레이아웃 및 서브 공통 콘텐츠
-sub_cnt.css - 템플릿 서브 콘텐츠
-```
+파일명|용도
+--- | ---
+basic.css|공통 요소
+fonts.css|폰트
+layout.css|공통 레이아웃
+main.css|메인 공통 콘텐츠
+main_widget.css|템플릿 메인 위젯
+main_cnt.css|템플릿 메인 콘텐츠
+con_com.css|서브 콘텐츠 공통 요소
+board.css|게시판/로그인 폼
+sub.css|서브 레이아웃 및 서브 공통 콘텐츠
+sub_cnt.css|템플릿 서브 콘텐츠
 
 **JS**
 
-```
-common.js - 공통 요소
-layout.js - 공통 레이아웃
-main.js - 메인 콘텐츠
-con_com.js - 서브 콘텐츠 공통 요소
-board.js - 게시판/로그인 폼
-sub.js - 서브 레이아웃 및 서브 콘텐츠
-```
+파일명|용도
+--- | ---
+common.js|공통 요소
+layout.js|공통 레이아웃
+main.js|메인 콘텐츠
+con_com.js|서브 콘텐츠 공통 요소
+board.js|게시판/로그인 폼
+sub.js|서브 레이아웃 및 서브 콘텐츠
 
 #### 1.2.2. 이미지 파일명
 
@@ -167,17 +167,17 @@ btn_more.png (O)
 
 ```.MC_wrap```과 ```.MC_box```는 개수에 제한이 없고, 한 개밖에 없어도 숫자 1을 표기하며, 디자인 상 ```.MC_box```를 감쌀 필요 없을 경우 ```.MC_wrap```을 생략할 수 있다. ```.MC_box```에 들어가는 각 위젯의 클래스명은 아래와 같다.
 
-```
-.main_visual - 메인 비주얼
-.popup - 알림판
-.m_link - 바로가기
-.notice - 공지사항
-.gallery - 갤러리
-.meal_menu - 식단
-.drawSchedule - 달력
-.video - 비디오
-.callBox - 연락처
-```
+파일명|용도
+--- | ---
+.main_visual|메인 비주얼
+.popup|알림판
+.m_link|바로가기
+.notice|공지사항
+.gallery|갤러리
+.meal_menu|식단
+.drawSchedule|달력
+.video|비디오
+.callBox|연락처
 
 #### 1.2.4. ID 표기법
 
@@ -286,16 +286,16 @@ class, style 속성을 제일 마지막에 선언한다. 예외사항 제외 정
 
 특수기호는 Entity 코드로 변환한다. 그렇지 않으면 브라우저가 이를 시작/종료 태그나 속성으로 해석할 수 있다. 아래는 사용 빈도가 높은 특수기호 목록이다.
 
-```
-& - &amp;
-· - &middot;
-< - &lt;
-> - &gt;
-← - &larr;
-↑ - &uarr;
-→ - &rarr;
-↓ - &darr;
-```
+특수기호|Entity
+--- | ---
+&|```&amp;```
+·|```&middot;```
+<|```&lt;```
+>|```&gt;```
+←|```&larr;```
+↑|```&uarr;```
+→|```&rarr;```
+↓|```&darr;```
 
 [이곳](https://www.w3schools.com/charsets/ref_html_entities_4.asp)에서 Entity 코드를 확인할 수 있다.
 
@@ -440,7 +440,7 @@ body { }
 
 ### 3.6. 들여쓰기
 
-CSS 코드를 작성할 때는 들여쓰기를 하지 않는다.
+CSS 코드를 작성할 때는 들여쓰기를 하지 않는다. SCSS(SASS) 사용 시에는 들여쓰기를 할 수 있다.
 
 **잘못된 예 : 들여쓰기로 인한 가독성 저하**
 
@@ -581,7 +581,9 @@ z-index 속성 선언값은 ```1, 3, 10, 999, 9999``` 등과 같은 통일되지
 
 ```!important``` 속성은 자연스러운 스타일 우선순위를 무시하고 가장 높은 우선 순위를 가지게 한다. 이로 인해 우선순위가 꼬여서 수정 및 유지보수 작업에 애로사항이 있을 수 있으니 절대 사용하지 않도록 하며, 스타일 우선순위 규칙에 맞게 CSS 코드를 작성하는 습관을 가진다.
 
-단, JS에서 정의된 스타일은 CSS 파일보다 높은 우선 순위를 가지므로 ```!important``` 속성으로 초기화해줄 수 있다.
+단, 예외사항이 존재할 수 있다.
+- ```<col>``` 태그에 style 속성으로 선언된 ```width```값을 조절해야 할 경우
+- JS에서 정의된 스타일은 CSS 파일보다 높은 우선 순위를 가지므로 ```!important``` 속성으로 초기화해줄 수 있음.
 
 **참고**
 
