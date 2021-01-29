@@ -470,7 +470,7 @@ CSS 코드를 작성할 때는 들여쓰기를 하지 않는다. 단, 선택자�
   .gnb .depth2 { }
     .gnb .depth3 { }
 
-@media print { #header { display:none; } }
+@media print { #header { display: none; } }
 ```
 
 **올바른 예 : 영역을 구분하려면 줄바꿈/주석을 사용한다.**
@@ -486,7 +486,7 @@ CSS 코드를 작성할 때는 들여쓰기를 하지 않는다. 단, 선택자�
 .gnb .depth3 { }
 
 @media print {
-    #header { display:none; }
+    #header { display: none; }
 }
 ```
 
