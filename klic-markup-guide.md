@@ -219,9 +219,7 @@ ID명은 첫 글자를 영문 소문자로, 각 단어의 첫 글자를 대문�
 
 ### 2.1. 유효성 오류 없는 HTML 파일
 
-모든 HTML 파일의 최종본은 [W3C Validator](https://validator.w3.org/unicorn/?ucn_lang=ko)를 이용한 유효성 검사를 통과해야 한다. 검사 결과에서 수정하지 않아도 되는 경고/오류가 있는 경우 무시할 수 있다.
-
-로컬 환경에서 검사하려면 [이곳](https://validator.w3.org/nu/)을 이용하면 된다.
+모든 HTML 파일의 최종본은 [W3C Validator](https://validator.w3.org/unicorn/?ucn_lang=ko)를 이용한 유효성 검사를 통과해야 한다. 검사 결과에서 수정하지 않아도 되는 경고/오류가 있는 경우 무시할 수 있다. 로컬 환경에서 검사하려면 [이곳](https://validator.w3.org/nu/)을 이용하면 된다.
 
 ### 2.2. 주석 표기
 
@@ -352,9 +350,7 @@ Heading 태그는 순서에 맞게 사용한다.
 
 ### 3.1. 유효성 오류 없는 CSS 파일
 
-모든 CSS 파일의 최종본은 [W3C Validator](https://validator.w3.org/unicorn/?ucn_lang=ko)를 이용한 유효성 검사를 통과해야 한다. 검사 결과에서 수정하지 않아도 되는 경고/오류가 있는 경우 무시할 수 있다.
-
-로컬 환경에서 검사하려면 [이곳](https://validator.w3.org/nu/)을 이용하면 된다.
+모든 CSS 파일의 최종본은 [W3C Validator](https://validator.w3.org/unicorn/?ucn_lang=ko)를 이용한 유효성 검사를 통과해야 한다. 검사 결과에서 수정하지 않아도 되는 경고/오류가 있는 경우 무시할 수 있다. 로컬 환경에서 검사하려면 [이곳](https://validator.w3.org/nu/)을 이용하면 된다.
 
 ### 3.2. 주석 표기
 
