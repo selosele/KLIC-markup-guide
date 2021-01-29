@@ -613,9 +613,9 @@ z-index 속성 선언값의 쉬운 파악을 위해 최소값과 최대값, 증�
 
 * [CSS 적용 우선순위](https://opentutorials.org/module/484/4149) - opentutorials.org
 
----
+<!-- ---
 
-<!-- ## 4. JS 코드 작성 규칙
+## 4. JS 코드 작성 규칙
 
 이 단락에서는 JS 코드 작성에 대한 규칙을 기술한다.
 
