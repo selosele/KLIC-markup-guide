@@ -619,4 +619,4 @@ $('a').on('click', function() {
 ## 참고 사이트
 
 * [NHN 코딩 컨벤션](https://nuli.navercorp.com/data/convention/NHN_Coding_Conventions_for_Markup_Languages.pdf)
-* [KLIC 퍼블리싱 스타일가이드](https://www.klic.co.kr/pub/guide/KLIC_Guide.html)
+* [KLIC 퍼블리싱 스타일가이드](https://klic.co.kr/design2021/)
