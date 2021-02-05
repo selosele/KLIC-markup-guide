@@ -113,6 +113,7 @@ con_com.css|서브 콘텐츠 공통 요소
 board.css|게시판/로그인 폼
 sub.css|서브 레이아웃 및 서브 공통 콘텐츠
 sub_cnt.css|템플릿 서브 콘텐츠
+popup.css|새창 팝업
 
 **JS**
 
@@ -178,6 +179,8 @@ btn_more.png (O)
 .drawSchedule|달력
 .video|비디오
 .callBox|연락처
+
+신규 HTML 문서를 작성할 때 본 레이아웃 구조 및 클래스명을 참고하되 가장 최근에 완료된 프로젝트 산출물을 기준으로 하여 항상 최신의 코드 품질을 유지한다.
 
 #### 1.2.4. ID 표기법
 
