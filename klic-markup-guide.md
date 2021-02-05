@@ -181,7 +181,7 @@ btn_more.png (O)
 
 #### 1.2.4. ID 표기법
 
-동일한 ID는 한 문서에서 한 번만 사용할 수 있으며, 레이아웃과 관련된 요소나 JS 작성을 위해서만 선언한다.
+동일한 ID는 한 문서에서 한 번만 사용할 수 있으며, 레이아웃과 관련된 요소나 JS 작성을 위해서만 사용한다.
 
 ```css
 #header { }
@@ -189,15 +189,15 @@ btn_more.png (O)
 
 #### 1.2.5. 클래스 네이밍 확장
 
-디자인적인 이유로 클래스를 확장해서 사용하려는 경우, 다음과 같은 표기법을 따른다.
+디자인 속성 추가/변경을 위해 클래스를 확장해서 사용하려는 경우, 다음과 같은 표기법을 따른다.
 
 **종속 확장 클래스**
 
 기본형 클래스에 종속되어 여백, 색깔, 행간 등의 몇 가지 속성을 부여하고자 할 때 사용하는 클래스. 다음은 ```tabStyle``` 클래스 확장 예시이다.
 
 ```html
-<ul class="tabStyle type1"></ul>
-<ul class="tabStyle type2"></ul>
+<div class="tabStyle type1"></div>
+<div class="tabStyle type2"></div>
 ```
 
 **독립 확장 클래스**
@@ -205,8 +205,8 @@ btn_more.png (O)
 기본형 클래스의 변형이 type으로 분류할 만큼 클 경우 사용하는 클래스.
 
 ```html
-<ul class="tabStyle_type1"></ul>
-<ul class="tabStyle_type2"></ul>
+<div class="tabStyle1"></div>
+<div class="tabStyle2"></div>
 ```
 
 ### 1.3. 크로스브라우징 범위
