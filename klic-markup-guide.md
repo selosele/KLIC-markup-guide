@@ -384,7 +384,7 @@ Heading 태그는 순서에 맞게 사용한다.
 
 오류메시지|방안
 --- | ---
-CSS: Parse Error.|속성 선언 시 콜론 ```:``` 누락 또는 마지막 속성의 중괄호 ```}``` 누락되어 발생하는 오류. ```td { padding; 0.3rem 0.5rem; border-bottom: 1px solid #ccc;``` 예시를 보면 ```padding;```에 콜론 대신 세미콜론이 있고, 마지막 속성 선언 후 중괄호로 닫지 않았다.
+CSS: Parse Error.|속성 선언 시 콜론 ```:``` 누락 또는 중괄호 ```{}``` 누락되어 발생하는 오류. ```td { padding; 0.3rem 0.5rem; border-bottom: 1px solid #ccc;``` 예시를 보면 ```padding;```에 콜론 대신 세미콜론이 있고, 마지막 속성 선언 후 중괄호로 닫지 않았다.
 ```padding```: Missing a semicolon before the property name ```border-bottom```.|속성값 사이에 세미콜론 ```;```이 누락되어 발생하는 오류. ```td { padding:0.3rem 0.5rem border-bottom:1px solid #ccc; }``` 예시를 보면 ```padding:0.3rem 0.5rem```과 ```border-bottom:1px solid #ccc``` 사이에 세미콜론이 누락되어 있다.
 
 ### 3.2. 주석 표기
