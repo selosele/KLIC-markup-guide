@@ -239,8 +239,9 @@ btn_more.png (O)
 내용|방안
 --- | ---
 Duplicate ID ```gnb```.| 한 문서에서 동일한 ID값(예 : gnb)이 중복되어 오류가 발생하므로 동일한 ID는 한 문서에서 중복 사용되면 안된다.
+Duplicate attribute class.|```<div class="" class=""></div>``` 예시처럼 HTML 태그에 같은 속성(예 : class)이 중복 선언되어 발생하는 오류로, 하나만 선언하도록 한다.
 No space between attributes.|HTML 태그에 선언한 속성 간 띄어쓰기가 누락되어 발생하는 오류. ```<img src="/sub/bg.png"alt="">``` 예시를 보면 img 태그의 src 속성과 alt 속성 사이에 띄어쓰기로 구분되어 있지 않다.
-An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.|img 태그에 alt 속성이 누락되어 발생하는 오류. ```<img src="/sub/bg.png">``` 이렇게 alt에 쓸 내용이 없다고 해서 alt 속성을 누락시키면 안되고 ```<img src="/sub/bg.png" alt="">``` 반드시 ```alt=""``` 빈 alt 값을 선언해야 한다.
+An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.|img 태그에 alt 속성이 누락되어 발생하는 오류. ```<img src="/sub/bg.png">``` 이렇게 alt에 쓸 내용이 없다고 해서 alt 속성을 누락시키면 안되고 ```<img src="/sub/bg.png" alt="">``` 반드시 빈 alt 값을 선언해야 한다.
 The value of the for attribute of the label element must be the ID of a non-hidden form control.|label 태그의 for 속성값과 매칭되는 ID값을 가진 요소가 없어서 발생하는 오류. ```<label for="element"></label> <input type="text" id="element">``` 예시처럼 반드시 label과 상호작용할 요소에 for 값과 매칭되는 ID 값을 선언해주어야 한다.
 A document must not include both a meta element with an http-equiv attribute whose value is content-type, and a meta element with a charset attribute.|문자 인코딩 지정을 위한 meta 태그 ```<meta charset="utf-8">```와 ```<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />```가 중복되어 발생하는 오류로, HTML 5 문법에 맞게 전자만 있으면 된다.
 
