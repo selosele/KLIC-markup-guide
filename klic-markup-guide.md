@@ -25,6 +25,7 @@
   - [2.7. Heading 태그 순서 준수](#27-heading-태그-순서-준수)
 - [3. CSS 코드 작성 규칙](#3-css-코드-작성-규칙)
   - [3.1. 유효성 오류 없는 CSS 파일](#31-유효성-오류-없는-css-파일)
+    - [3.1.1. 자주 검출되는 오류](#311-자주-검출되는-오류)
   - [3.2. 주석 표기](#32-주석-표기)
     - [3.2.1. 특정 요소 그룹핑을 위한 주석 표기](#321-특정-요소-그룹핑을-위한-주석-표기)
   - [3.3. 빈 줄](#33-빈-줄)
@@ -376,6 +377,15 @@ Heading 태그는 순서에 맞게 사용한다.
 ### 3.1. 유효성 오류 없는 CSS 파일
 
 모든 CSS 파일의 최종본은 [W3C Validator](https://validator.w3.org/unicorn/?ucn_lang=ko)를 이용한 유효성 검사를 통과해야 한다. 검사 결과에서 수정하지 않아도 되는 경고/오류가 있는 경우 무시할 수 있다. 로컬 환경에서 검사하려면 [이곳](https://validator.w3.org/nu/)을 이용한다.
+
+#### 3.1.1. 자주 검출되는 오류
+
+다음은 KLIC 퍼블리싱 산출물에서 자주 검출되는 오류 목록이다.
+
+오류메시지|방안
+--- | ---
+CSS: Parse Error.|속성 선언 시 콜론 ```:``` 누락 또는 마지막 속성의 중괄호 ```}``` 누락되어 발생하는 오류. ```td { padding; 0.3rem 0.5rem; border-bottom: 1px solid #ccc;``` 예시를 보면 ```padding;```에 콜론 대신 세미콜론이 있고, 마지막 속성 선언 후 중괄호로 닫지 않았다.
+```padding```: Missing a semicolon before the property name ```border-bottom```.|속성값 사이에 세미콜론 ```;```이 누락되어 발생하는 오류. ```td { padding:0.3rem 0.5rem border-bottom:1px solid #ccc; }``` 예시를 보면 ```padding:0.3rem 0.5rem```과 ```border-bottom:1px solid #ccc``` 사이에 세미콜론이 누락되어 있다.
 
 ### 3.2. 주석 표기
 
