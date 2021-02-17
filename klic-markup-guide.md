@@ -15,6 +15,7 @@
   - [1.3. 크로스브라우징 범위](#13-크로스브라우징-범위)
 - [2. HTML 코드 작성 규칙](#2-html-코드-작성-규칙)
   - [2.1. 유효성 오류 없는 HTML 파일](#21-유효성-오류-없는-html-파일)
+    - [2.1.1. 자주 검출되는 오류](#211-자주-검출되는-오류)
   - [2.2. 주석 표기](#22-주석-표기)
     - [2.2.1. 개발 적용과 관련된 주석 표기](#221-개발-적용과-관련된-주석-표기)
   - [2.3. 빈 줄](#23-빈-줄)
@@ -231,6 +232,18 @@ btn_more.png (O)
 
 모든 HTML 파일의 최종본은 [W3C Validator](https://validator.w3.org/unicorn/?ucn_lang=ko)를 이용한 유효성 검사를 통과해야 한다. 검사 결과에서 수정하지 않아도 되는 경고/오류가 있는 경우 무시할 수 있다. 로컬 환경에서 검사하려면 [이곳](https://validator.w3.org/nu/)을 이용하면 된다.
 
+#### 2.1.1. 자주 검출되는 오류
+
+다음은 WSC Validator에서 자주 검출되는 오류 목록이다.
+
+내용|방안
+--- | ---
+Duplicate ID ```gnb```.| 한 문서에서 같은 ID값(예 : gnb)이 중복되어 오류가 발생하므로 ID는 한 문서에서 중복 사용되면 안된다.
+No space between attributes.|HTML 태그에 선언한 속성 간 띄어쓰기가 누락되어 발생하는 오류. ```<img src="/sub/bg.png"alt="">``` 예시를 보면 img 태그의 src 속성과 alt 속성 사이에 띄어쓰기로 구분되어 있지 않다.
+An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.|img 태그에 alt 속성이 누락되어 발생하는 오류. ```<img src="/sub/bg.png">``` 이렇게 alt에 쓸 내용이 없다고 해서 alt 속성을 누락시키면 안되고 ```<img src="/sub/bg.png" alt="">``` 반드시 ```alt=""``` 빈 alt 값을 선언해야 한다.
+The value of the for attribute of the label element must be the ID of a non-hidden form control.|label 태그의 for 속성값과 매칭되는 ID값을 가진 요소가 없어서 발생하는 오류. ```<label for="element"></label> <input type="text" id="element">``` 예시처럼 반드시 label과 상호작용할 요소에 for 값과 매칭되는 ID 값을 선언해주어야 한다.
+A document must not include both a meta element with an http-equiv attribute whose value is content-type, and a meta element with a charset attribute.|문자 인코딩 지정을 위한 meta 태그 ```<meta charset="utf-8">```와 ```<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />```가 중복되어 발생하는 오류로, HTML 5 문법에 맞게 전자만 있으면 된다.
+
 ### 2.2. 주석 표기
 
 HTML 주석은 아래와 같이 표기하며, 주석 기호와 내용 사이에 한 칸의 공백을 둔다.
@@ -249,7 +262,7 @@ HTML 주석의 시작/종료 주석은 아래와 같이 표기하며, 종료 주
 
 #### 2.2.1. 개발 적용과 관련된 주석 표기
 
-개발 적용과 관련된 주석은 다음과 같이 표기하며, [D]라는 말머리를 사용하여 담당 개발자가 반드시 확인할 수 있도록 한다. 퍼블리싱 적용과 관련된 주석은 말머리를 사용하지 않는다.
+개발 적용과 관련된 주석은 다음과 같이 표기하며, [D]라는 말머리를 사용하여 담당 개발자가 반드시 확인할 수 있도록 한다. 해당 주석은 종료 주석을 사용하지 않으며, 퍼블리싱 적용과 관련된 주석은 말머리를 사용하지 않는다.
 
 ```html
 <ul>
