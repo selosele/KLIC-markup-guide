@@ -236,15 +236,15 @@ btn_more.png (O)
 
 다음은 WSC Validator에서 자주 검출되는 오류 목록이다.
 
-입력|오류|방안
---- | --- | ---
-```<ul id="gnb"></ul>```<br>```<ul id="gnb"></ul>```|Duplicate ID ```gnb```.| 한 문서에서 동일한 ID값(예 : gnb)이 중복되어 오류가 발생하므로 동일한 ID는 한 문서에서 중복 사용되면 안된다.
-```<div class="" class=""></div>```|Duplicate attribute ```class```.|HTML 태그에 같은 속성(예 : class)이 중복 선언되어 발생하는 오류로, 하나만 선언하도록 한다.
-```<img src="bg.png"alt="">```|No space between attributes.|HTML 태그에 선언한 속성 간 띄어쓰기가 누락되어 발생하는 오류. img 태그의 src 속성과 alt 속성 사이에 띄어쓰기로 구분되어 있지 않다.
-```<img src="bg.png">```|An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.|img 태그에 alt 속성이 누락되어 발생하는 오류. alt에 쓸 내용이 없다고 해서 alt 속성을 누락시키면 안되고 ```<img src="bg.png" alt="">``` 반드시 빈 alt 값을 선언해야 한다.
-```<label for="element"></label>```<br>```<input type="text">```|The value of the for attribute of the label element must be the ID of a non-hidden form control.|label 태그의 for 속성값과 매칭되는 ID값을 가진 요소가 없어서 발생하는 오류. ```<label for="element"></label> <input type="text" id="element">``` 예시처럼 반드시 label과 상호작용할 요소에 for 값과 매칭되는 ID 값을 선언해주어야 한다.
-```<table>```<br>&nbsp;&nbsp;&nbsp;&nbsp;```<tr>```<br>&nbsp;&nbsp;&nbsp;&nbsp;```<td rowspan="2"></td>```<br>&nbsp;&nbsp;&nbsp;&nbsp;```</tr>```<br>```</table>```|Table cell spans past the end of its row group established by a tbody element; clipped to the end of the row group.|table 태그 th, td의 rowspan/colspan 수치가 맞지 않아 발생하는 오류. 수치가 맞지 않으면 올바르지 못한 마크업이 출력되어 틀어져 보이므로 반드시 수치를 확인한다.
-```<head>```<br>&nbsp;&nbsp;&nbsp;&nbsp;```<meta charset="utf-8">```<br>&nbsp;&nbsp;&nbsp;&nbsp;```<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />```<br>```</head>```|A document must not include both a meta element with an http-equiv attribute whose value is content-type, and a meta element with a charset attribute.|문자 인코딩 지정을 위한 meta 태그 ```<meta charset="utf-8">```와 ```<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />```가 중복되어 발생하는 오류로, HTML 5 문법에 맞게 전자만 있으면 된다.
+오류메시지|방안
+--- | ---
+Duplicate ID ```gnb```.| 한 문서에서 동일한 ID값(예 : gnb)이 중복되어 오류가 발생하므로 동일한 ID는 한 문서에서 중복 사용되면 안된다.
+Duplicate attribute ```class```.|```<div class="" class=""></div>``` 예시처럼 HTML 태그에 같은 속성(예 : class)이 중복 선언되어 발생하는 오류로, 하나만 선언하도록 한다.
+No space between attributes.|HTML 태그에 선언한 속성 간 띄어쓰기가 누락되어 발생하는 오류. ```<img src="bg.png"alt="">``` img 태그의 src 속성과 alt 속성 사이에 띄어쓰기로 구분되어 있지 않다.
+An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.|img 태그에 alt 속성이 누락되어 발생하는 오류. ```<img src="bg.png">``` 이렇게 alt에 쓸 내용이 없다고 해서 alt 속성을 누락시키면 안되고, ```<img src="bg.png" alt="">``` 반드시 빈 alt 값을 선언해야 한다.
+The value of the for attribute of the label element must be the ID of a non-hidden form control.|label 태그의 for 속성값과 매칭되는 ID값을 가진 요소가 없어서 발생하는 오류. ```<label for="element"></label> <input type="text" id="element">``` 예시처럼 반드시 label과 상호작용할 요소에 for 값과 매칭되는 ID 값을 선언해주어야 한다.
+Table cell spans past the end of its row group established by a tbody element; clipped to the end of the row group.|table 태그 th, td의 rowspan/colspan 수치가 맞지 않아 발생하는 오류. 수치가 맞지 않으면 올바르지 못한 마크업이 출력되어 틀어져 보이므로 반드시 수치를 확인한다.
+A document must not include both a meta element with an http-equiv attribute whose value is content-type, and a meta element with a charset attribute.|문자 인코딩 지정을 위한 meta 태그 ```<meta charset="utf-8">```와 ```<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />```가 중복되어 발생하는 오류로, HTML 5 문법에 맞게 전자만 있으면 된다.
 
 ### 2.2. 주석 표기
 
