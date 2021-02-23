@@ -57,7 +57,7 @@
 
 버전|일자|내용|작성자
 --- | --- | --- | ---
-&nbsp;|2020-12-11|초안 작성|오세현
+|2020-12-11|초안 작성|오세현
 
 ---
 
@@ -247,7 +247,7 @@ The value of the for attribute of the label element must be the ID of a non-hidd
 td start tag in table body.|table 태그의 td 또는 th 태그의 부모 요소인 tr 태그가 누락되어 발생하는 오류.
 Table cell spans past the end of its row group established by a tbody element; clipped to the end of the row group.|table 태그 th 또는 td 태그의 rowspan/colspan 수치가 맞지 않아 발생하는 오류. 수치가 맞지 않으면 틀어져 보이므로 반드시 수치를 확인한다.
 Bad value ```첨부 파일.zip``` for attribute href on element a: Illegal character in path segment: space is not allowed.|```<a href="첨부 파일.zip">파일 다운로드</a>``` a 태그의 href 속성값에 공백이 포함되어 발생하는 오류. ```<a href="첨부_파일.zip">파일 다운로드</a>``` 예시처럼 공백을 ```_``` 기호 등으로 바꿔서 오류를 방지한다.
-A document must not include both a meta element with an http-equiv attribute whose value is content-type, and a meta element with a charset attribute.|문자 인코딩 지정을 위한 meta 태그 ```<meta charset="utf-8">```와 ```<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />```가 중복되어 발생하는 오류로, HTML 5를 사용할 땐 전자만 있으면 되고 HTML 4.01은 후자만 있으면 된다.
+A document must not include both a meta element with an http-equiv attribute whose value is content-type, and a meta element with a charset attribute.|HTML 문서의 인코딩 정보 선언을 위한 meta 태그 ```<meta charset="utf-8">```와 ```<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />```가 중복되어 발생하는 오류로, HTML 5를 사용할 땐 전자만 있으면 되고 HTML 4.01은 후자만 있으면 된다.
 
 ### 2.2. 주석 표기
 
