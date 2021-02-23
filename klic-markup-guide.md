@@ -33,11 +33,12 @@
   - [3.3. 빈 줄](#33-빈-줄)
   - [3.4. 줄 바꿈](#34-줄-바꿈)
   - [3.5. 들여쓰기](#35-들여쓰기)
-  - [3.6. 속성 선언 순서](#36-속성-선언-순서)
-  - [3.7. 마지막 속성의 세미콜론 표기](#37-마지막-속성의-세미콜론-표기)
-  - [3.8. 속성값 축약](#38-속성값-축약)
-  - [3.9. z-index 허용 선언값](#39-z-index-허용-선언값)
-  - [3.10. !important 속성 사용 금지](#310-important-속성-사용-금지)
+  - [3.6. 인코딩 선언](#36-인코딩-선언)
+  - [3.7. 속성 선언 순서](#37-속성-선언-순서)
+  - [3.8. 마지막 속성의 세미콜론 표기](#38-마지막-속성의-세미콜론-표기)
+  - [3.9. 속성값 축약](#39-속성값-축약)
+  - [3.10. z-index 허용 선언값](#310-z-index-허용-선언값)
+  - [3.11. !important 속성 사용 금지](#311-important-속성-사용-금지)
 - [참고 사이트](#참고-사이트)
     
 ---
@@ -179,11 +180,11 @@ btn_more.png (O)
 .video|비디오
 .callBox|연락처
 
-신규 HTML 문서를 작성할 때 본 레이아웃 구조 및 클래스명을 참고하되 가장 최근에 완료된 프로젝트의 산출물을 기준으로 하여 항상 최신의 코드 품질을 유지한다.
+신규 HTML 파일을 작성할 때 본 레이아웃 구조 및 클래스명을 참고하되 가장 최근에 완료된 프로젝트의 산출물을 기준으로 하여 항상 최신의 코드 품질을 유지한다.
 
 #### 1.2.4. ID 표기법
 
-동일한 ID는 한 문서에서 한 번만 사용할 수 있으며, 레이아웃과 관련된 요소나 JS 작성을 위해서만 사용한다.
+동일한 ID는 한 파일에서 한 번만 사용할 수 있으며, 레이아웃과 관련된 요소나 JS 작성을 위해서만 사용한다.
 
 ```css
 #header { }
@@ -236,7 +237,7 @@ btn_more.png (O)
 
 오류메시지|방안
 --- | ---
-Duplicate ID ```gnb```.| 한 문서에서 동일한 ID값(예 : gnb)이 중복되어 오류가 발생하므로 동일한 ID는 한 문서에서 중복 사용되면 안된다.
+Duplicate ID ```gnb```.| 한 페이지에서 동일한 ID값(예 : gnb)이 중복되어 오류가 발생하므로 동일한 ID는 한 페이지에서 중복 사용되면 안된다.
 Duplicate attribute ```class```.|```<div class="" class=""></div>``` 예시처럼 HTML 태그에 같은 속성(예 : class)이 중복 선언되어 발생하는 오류로, 하나만 선언하도록 한다.
 No space between attributes.|HTML 태그에 선언한 속성 간 띄어쓰기가 누락되어 발생하는 오류. ```<img src="bg.png"alt="">``` img 태그의 src 속성과 alt 속성 사이에 띄어쓰기로 구분되어 있지 않다.
 An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.|img 태그에 alt 속성이 누락되어 발생하는 오류. ```<img src="bg.png">``` 이렇게 alt에 쓸 내용이 없다고 해서 alt 속성을 누락시키면 안되고, ```<img src="bg.png" alt="">``` 반드시 빈 alt 값을 선언해야 한다.
@@ -244,7 +245,7 @@ The value of the for attribute of the label element must be the ID of a non-hidd
 td start tag in table body.|table 태그의 td 또는 th 태그의 부모 요소인 tr 태그가 누락되어 발생하는 오류.
 Table cell spans past the end of its row group established by a tbody element; clipped to the end of the row group.|table 태그 th 또는 td 태그의 rowspan/colspan 수치가 맞지 않아 발생하는 오류. 수치가 맞지 않으면 틀어져 보이므로 반드시 수치를 확인한다.
 Bad value ```첨부 파일.zip``` for attribute href on element a: Illegal character in path segment: space is not allowed.|```<a href="첨부 파일.zip">파일 다운로드</a>``` a 태그의 href 속성값에 공백이 포함되어 발생하는 오류. ```<a href="첨부_파일.zip">파일 다운로드</a>``` 예시처럼 공백을 ```_``` 기호 등으로 바꿔서 오류를 방지한다.
-A document must not include both a meta element with an http-equiv attribute whose value is content-type, and a meta element with a charset attribute.|HTML 문서의 인코딩 정보 선언을 위한 meta 태그 ```<meta charset="utf-8">```와 ```<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />```가 중복되어 발생하는 오류로, HTML 5를 사용할 땐 전자만 있으면 되고 HTML 4.01은 후자만 있으면 된다.
+A document must not include both a meta element with an http-equiv attribute whose value is content-type, and a meta element with a charset attribute.|HTML 파일의 인코딩 정보 선언을 위한 meta 태그 ```<meta charset="utf-8">```와 ```<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />```가 중복되어 발생하는 오류로, HTML 5를 사용할 땐 전자만 있으면 되고 HTML 4.01은 후자만 있으면 된다.
 
 ### 2.2. 주석 표기
 
@@ -303,7 +304,7 @@ HTML 주석의 시작/종료 주석은 아래와 같이 표기하며, 종료 주
 
 #### 2.4.1. DTD 선언
 
-HTML 문서는 반드시 DTD(문서 형식 선언)을 문서의 최상단에 선언한다. 신규 HTML 문서를 작성할 때는 HTML 5를 사용하며 작성 예는 다음과 같다.
+HTML 파일은 반드시 DTD(문서 형식 선언)을 파일의 최상단에 선언한다. 신규 HTML 파일을 작성할 때는 HTML 5를 사용하며 작성 예는 다음과 같다.
 
 ```html
 <!DOCTYPE html>
@@ -311,7 +312,7 @@ HTML 문서는 반드시 DTD(문서 형식 선언)을 문서의 최상단에 선
 
 #### 2.4.2. 인코딩 선언
 
-HTML 문서는 반드시 인코딩 정보를 선언한다. 기본 인코딩은 utf-8을 원칙으로 하며 작성 예는 다음과 같다.
+HTML 파일은 반드시 인코딩 정보를 선언한다. 기본 인코딩은 utf-8을 원칙으로 하며 작성 예는 다음과 같다.
 
 ```html
 <meta charset="utf-8">
@@ -322,6 +323,8 @@ HTML 4.01 DTD 사용 예시는 다음과 같고, HTML 5의 것과 중복되지 �
 ```html
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 ```
+
+파일을 저장할 때는 반드시 선언한 인코딩과 동일한 인코딩을 선택한다.
 
 DTD 및 인코딩을 선언한 예시는 다음과 같다.
 
@@ -519,9 +522,19 @@ CSS 코드를 작성할 때는 들여쓰기를 하지 않는다. 단, 선택자�
 }
 ```
 
-### 3.6. 속성 선언 순서
+### 3.6. 인코딩 선언
 
-속성을 선언할 때는 그 쓰임새가 레이아웃과 관련이 큰 것에서 시작하여 레이아웃과 무관한 것 순서로 선언한다. 관련 속성은 대표되는 속성 다음으로 선언하며, 다음 표에 표기된 순서대로 선언한다(**일전에 프린트물로 배포했던 것과 비슷한 내용임**).
+주석, 폰트 이름 등이 영문이 아닐 때 이를 브라우저에서 바르게 표현하고, HTML에서 불러온 스타일을 제대로 렌더링하기 위해 반드시 CSS 인코딩을 선언해야 한다. HTML과 동일한 인코딩을 CSS 파일 최상단에 선언하며 작성 예는 다음과 같다.
+
+```css
+@charset "utf-8";
+```
+
+파일을 저장할 때는 반드시 선언한 인코딩과 동일한 인코딩을 선택한다.
+
+### 3.7. 속성 선언 순서
+
+속성을 선언할 때는 그 쓰임새가 레이아웃과 관련이 큰 것에서 시작하여 레이아웃과 무관한 것 순서로 선언한다. 다음 표에 표기된 순서대로 선언하며, 관련 속성은 대표되는 속성 다음으로 선언한다(**일전에 프린트물로 배포했던 것과 비슷한 내용임**).
 
 순서|의미|대표되는 속성|관련 속성
 --- | --- | --- | ---
@@ -536,7 +549,7 @@ CSS 코드를 작성할 때는 들여쓰기를 하지 않는다. 단, 선택자�
 9|배경|background (그룹)| -
 10|기타|-|위에 언급되지 않은 나머지 속성들로 배경의 관련 속성 이후에 선언하며, 기타 속성 내의 선언 순서는 무관함
 
-### 3.7. 마지막 속성의 세미콜론 표기
+### 3.8. 마지막 속성의 세미콜론 표기
 
 다른 작업자가 이어서 작성하기 편하게 마지막 속성의 세미콜론을 반드시 표기한다.
 
@@ -552,7 +565,7 @@ CSS 코드를 작성할 때는 들여쓰기를 하지 않는다. 단, 선택자�
 .gnb { display: block; width: 100%; }
 ```
 
-### 3.8. 속성값 축약
+### 3.9. 속성값 축약
 
 CSS 가독성 향상을 위해 다음과 같이 속성값을 축약한다.
 
@@ -581,7 +594,7 @@ font-size: .9rem (X)
 font-size: 0.9rem (O)
 ```
 
-### 3.9. z-index 허용 선언값
+### 3.10. z-index 허용 선언값
 
 z-index 속성 선언값의 쉬운 파악을 위해 최소값과 최대값, 증감 단위를 정한다.
 
@@ -593,7 +606,7 @@ z-index 속성 선언값의 쉬운 파악을 위해 최소값과 최대값, 증�
 .class3 { z-index: 10; }
 ```
 
-### 3.10. !important 속성 사용 금지
+### 3.11. !important 속성 사용 금지
 
 ```!important``` 속성은 자연스러운 스타일 우선순위를 무시하고 가장 높은 우선 순위를 가지게 한다. 이로 인해 우선순위가 꼬여서 수정 및 유지보수 작업에 애로사항이 있을 수 있으니 절대 사용하지 않도록 하며, 스타일 우선순위 규칙에 맞게 CSS 코드를 작성한다.
 
