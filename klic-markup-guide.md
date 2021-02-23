@@ -19,10 +19,13 @@
   - [2.2. 주석 표기](#22-주석-표기)
     - [2.2.1. 개발 적용과 관련된 주석 표기](#221-개발-적용과-관련된-주석-표기)
   - [2.3. 빈 줄](#23-빈-줄)
-  - [2.4. 들여쓰기](#24-들여쓰기)
-  - [2.5. 속성 선언 순서](#25-속성-선언-순서)
-  - [2.6. 특수기호 변환](#26-특수기호-변환)
-  - [2.7. Heading 태그 순서 준수](#27-heading-태그-순서-준수)
+  - [2.4. DTD 및 인코딩](#24-dtd-및-인코딩)
+    - [2.4.1. DTD 선언](#241-dtd-선언)
+    - [2.4.2. 인코딩 선언](#242-인코딩-선언)
+  - [2.5. 들여쓰기](#25-들여쓰기)
+  - [2.6. 속성 선언 순서](#26-속성-선언-순서)
+  - [2.7. 특수기호 변환](#27-특수기호-변환)
+  - [2.8. Heading 태그 순서 준수](#28-heading-태그-순서-준수)
 - [3. CSS 코드 작성 규칙](#3-css-코드-작성-규칙)
   - [3.1. 유효성 오류 없는 CSS 파일](#31-유효성-오류-없는-css-파일)
     - [3.1.1. 자주 검출되는 오류](#311-자주-검출되는-오류)
@@ -34,10 +37,9 @@
   - [3.6. 속성 선언 순서](#36-속성-선언-순서)
   - [3.7. 마지막 속성의 세미콜론 표기](#37-마지막-속성의-세미콜론-표기)
   - [3.8. 단위 변환](#38-단위-변환)
-  - [3.9. 통일된 공통 클래스 사용](#39-통일된-공통-클래스-사용)
-  - [3.10. 속성값 축약](#310-속성값-축약)
-  - [3.11. z-index 허용 선언값](#311-z-index-허용-선언값)
-  - [3.12. !important 속성 사용 금지](#312-important-속성-사용-금지)
+  - [3.9. 속성값 축약](#39-속성값-축약)
+  - [3.10. z-index 허용 선언값](#310-z-index-허용-선언값)
+  - [3.11. !important 속성 사용 금지](#311-important-속성-사용-금지)
 - [4. JS 코드 작성 규칙](#4-js-코드-작성-규칙)
   - [4.1. 주석 표기](#41-주석-표기)
   - [4.2. 들여쓰기](#42-들여쓰기)
@@ -229,7 +231,7 @@ btn_more.png (O)
 
 ### 2.1. 유효성 오류 없는 HTML 파일
 
-모든 HTML 파일의 최종본은 [W3C Validator](https://validator.w3.org/unicorn/?ucn_lang=ko)를 이용한 유효성 검사를 통과해야 한다. 검사 결과에서 수정하지 않아도 되는 경고/오류가 있는 경우 무시할 수 있다. 로컬 환경에서 검사하려면 [이곳](https://validator.w3.org/nu/)을 이용한다.
+모든 HTML 파일의 최종본은 [W3C Validatation](https://validator.w3.org/unicorn/?ucn_lang=ko)를 이용한 유효성 검사를 통과해야 한다. 검사 결과에서 수정하지 않아도 되는 경고/오류가 있는 경우 무시할 수 있다. 로컬 환경에서 검사하려면 [이곳](https://validator.w3.org/nu/)을 이용한다.
 
 #### 2.1.1. 자주 검출되는 오류
 
@@ -245,7 +247,7 @@ The value of the for attribute of the label element must be the ID of a non-hidd
 td start tag in table body.|table 태그의 td 또는 th 태그의 부모 요소인 tr 태그가 누락되어 발생하는 오류.
 Table cell spans past the end of its row group established by a tbody element; clipped to the end of the row group.|table 태그 th 또는 td 태그의 rowspan/colspan 수치가 맞지 않아 발생하는 오류. 수치가 맞지 않으면 틀어져 보이므로 반드시 수치를 확인한다.
 Bad value ```첨부 파일.zip``` for attribute href on element a: Illegal character in path segment: space is not allowed.|```<a href="첨부 파일.zip">파일 다운로드</a>``` a 태그의 href 속성값에 공백이 포함되어 발생하는 오류. ```<a href="첨부_파일.zip">파일 다운로드</a>``` 예시처럼 공백을 ```_``` 기호 등으로 바꿔서 오류를 방지한다.
-A document must not include both a meta element with an http-equiv attribute whose value is content-type, and a meta element with a charset attribute.|문자 인코딩 지정을 위한 meta 태그 ```<meta charset="utf-8">```와 ```<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />```가 중복되어 발생하는 오류로, HTML 5 문법에 맞게 전자만 있으면 된다.
+A document must not include both a meta element with an http-equiv attribute whose value is content-type, and a meta element with a charset attribute.|문자 인코딩 지정을 위한 meta 태그 ```<meta charset="utf-8">```와 ```<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />```가 중복되어 발생하는 오류로, HTML 5를 사용할 땐 전자만 있으면 되고 HTML 4.01은 후자만 있으면 된다.
 
 ### 2.2. 주석 표기
 
@@ -300,7 +302,46 @@ HTML 주석의 시작/종료 주석은 아래와 같이 표기하며, 종료 주
 </body>
 ```
 
-### 2.4. 들여쓰기
+### 2.4. DTD 및 인코딩
+
+#### 2.4.1. DTD 선언
+
+HTML 문서는 반드시 DTD(문서 형식 선언)을 문서의 최상단에 선언한다. 신규 HTML 문서를 작성할 때는 HTML 5를 사용하며 작성 예는 다음과 같다.
+
+```html
+<!DOCTYPE html>
+```
+
+#### 2.4.2. 인코딩 선언
+
+HTML 문서는 반드시 인코딩 정보를 선언한다. 기본 인코딩은 utf-8을 원칙으로 하며 작성 예는 다음과 같다.
+
+```html
+<meta charset="utf-8">
+```
+
+HTML 4.01 DTD 사용 시에는 다음과 같이 선언한다.
+
+```html
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+```
+
+DTD 및 인코딩을 선언한 예시는 다음과 같다.
+
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    ...
+</head>
+<body>
+    
+</body>
+</html>
+```
+
+### 2.5. 들여쓰기
 
 HTML 코드에 대한 들여쓰기는 Tab(탭)키를 사용한 4칸 들여쓰기로 통일한다.
 
@@ -320,7 +361,7 @@ HTML 코드에 대한 들여쓰기는 Tab(탭)키를 사용한 4칸 들여쓰기
 </div>
 ```
 
-### 2.5. 속성 선언 순서
+### 2.6. 속성 선언 순서
 
 HTML 태그에 속성 선언 시 class, style 속성을 제일 마지막에 선언한다.
 
@@ -328,7 +369,7 @@ HTML 태그에 속성 선언 시 class, style 속성을 제일 마지막에 선�
 <a href="" title="새창" target="_blank" id="btn" class="btn" style="width: auto;"></a>
 ```
 
-### 2.6. 특수기호 변환
+### 2.7. 특수기호 변환
 
 특수기호는 Entity 코드로 변환한다. 그렇지 않으면 브라우저가 이를 시작/종료 태그나 속성으로 해석할 수 있다. 아래는 사용 빈도가 높은 특수기호 목록이다.
 
@@ -346,7 +387,7 @@ HTML 태그에 속성 선언 시 class, style 속성을 제일 마지막에 선�
 
 [이곳](https://www.w3schools.com/charsets/ref_html_entities_4.asp)에서 Entity 코드를 확인할 수 있다.
 
-### 2.7. Heading 태그 순서 준수
+### 2.8. Heading 태그 순서 준수
 
 Heading 태그는 순서에 맞게 사용한다.
 
@@ -374,7 +415,7 @@ Heading 태그는 순서에 맞게 사용한다.
 
 ### 3.1. 유효성 오류 없는 CSS 파일
 
-모든 CSS 파일의 최종본은 [W3C Validator](https://validator.w3.org/unicorn/?ucn_lang=ko)를 이용한 유효성 검사를 통과해야 한다. 검사 결과에서 수정하지 않아도 되는 경고/오류가 있는 경우 무시할 수 있다. 로컬 환경에서 검사하려면 [이곳](https://validator.w3.org/nu/)을 이용한다.
+모든 CSS 파일의 최종본은 [W3C Validatation](https://validator.w3.org/unicorn/?ucn_lang=ko)를 이용한 유효성 검사를 통과해야 한다. 검사 결과에서 수정하지 않아도 되는 경고/오류가 있는 경우 무시할 수 있다. 로컬 환경에서 검사하려면 [이곳](https://validator.w3.org/nu/)을 이용한다.
 
 #### 3.1.1. 자주 검출되는 오류
 
@@ -519,7 +560,7 @@ CSS 코드를 작성할 때는 들여쓰기를 하지 않는다. 단, 선택자�
 
 ### 3.6. 속성 선언 순서
 
-속성을 선언할 때는 그 쓰임새가 레이아웃과 관련이 큰 것에서 시작하여 레이아웃과 무관한 것 순서로 선언한다. 관련 속성은 대표되는 속성 다음으로 선언하며, 다음 표에 표기된 순서대로 선언한다.
+속성을 선언할 때는 그 쓰임새가 레이아웃과 관련이 큰 것에서 시작하여 레이아웃과 무관한 것 순서로 선언한다. 관련 속성은 대표되는 속성 다음으로 선언하며, 다음 표에 표기된 순서대로 선언한다(**일전에 프린트물로 배포했던 것과 동일한 내용임**).
 
 순서|의미|대표되는 속성|관련 속성
 --- | --- | --- | ---
@@ -530,8 +571,8 @@ CSS 코드를 작성할 때는 들여쓰기를 하지 않는다. 단, 선택자�
 5|크기|width &amp; height| -
 6|간격|margin &amp; padding (그룹)| -
 7|테두리|border (그룹)| -
-8|배경|background (그룹)| -
-9|폰트|font (그룹)|color, letter-spacing, text-align, text-decoration, text-indent, vertical-align, white-space 등
+8|폰트|font (그룹)|font-size, color, letter-spacing, text-align, text-decoration, text-indent, vertical-align, white-space 등 선언 순서는 무관함
+9|배경|background (그룹)| -
 10|기타|-|위에 언급되지 않은 나머지 속성들로 폰트의 관련 속성 이후에 선언하며, 기타 속성 내의 선언 순서는 무관함
 
 ### 3.7. 마지막 속성의 세미콜론 표기
@@ -577,17 +618,7 @@ px|rem|비고
 - px값 / html 태그의 ```font-size``` 속성값
   - 예) 30px / 20px = 1.5rem
 
-### 3.9. 통일된 공통 클래스 사용
-
-공통 CSS 파일에 작성된 동일한 역할을 하는 다수의 클래스 중 하나로 통일해서 사용한다.
-
-**숨김 텍스트 기법 구현을 위한 공통 클래스**
-
-```css
-.hid, .blind, .sr-only { } /* .sr-only로 통일해서 사용 */
-```
-
-### 3.10. 속성값 축약
+### 3.9. 속성값 축약
 
 CSS 가독성 향상을 위해 다음과 같이 속성값을 축약한다.
 
@@ -616,7 +647,7 @@ font-size: .9rem (X)
 font-size: 0.9rem (O)
 ```
 
-### 3.11. z-index 허용 선언값
+### 3.10. z-index 허용 선언값
 
 z-index 속성 선언값의 쉬운 파악을 위해 최소값과 최대값, 증감 단위를 정한다.
 
@@ -628,7 +659,7 @@ z-index 속성 선언값의 쉬운 파악을 위해 최소값과 최대값, 증�
 .class3 { z-index: 10; }
 ```
 
-### 3.12. !important 속성 사용 금지
+### 3.11. !important 속성 사용 금지
 
 ```!important``` 속성은 자연스러운 스타일 우선순위를 무시하고 가장 높은 우선 순위를 가지게 한다. 이로 인해 우선순위가 꼬여서 수정 및 유지보수 작업에 애로사항이 있을 수 있으니 절대 사용하지 않도록 하며, 스타일 우선순위 규칙에 맞게 CSS 코드를 작성한다.
 
