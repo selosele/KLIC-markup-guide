@@ -330,6 +330,8 @@ HTML 파일은 반드시 DTD(문서 형식 선언)을 파일의 최상단에 선
 <!DOCTYPE html>
 ```
 
+HTML 4.01, XHTML 1.0, XHTML 1.1, HTML 5 각각 선언문이 다르므로 확인해야 하며 중복 선언하지 않는다.
+
 #### 2.5.2. 인코딩 선언
 
 HTML 파일은 반드시 인코딩 정보를 선언한다. 기본 인코딩은 utf-8을 원칙으로 하며 작성 예는 다음과 같다.
@@ -338,7 +340,7 @@ HTML 파일은 반드시 인코딩 정보를 선언한다. 기본 인코딩은 u
 <meta charset="utf-8">
 ```
 
-HTML 4.01 DTD 사용 예시는 다음과 같고, HTML 5의 것과 중복되지 않게 선언한다.
+HTML 4.01 DTD 사용 예시는 다음과 같고, HTML 5의 것과 중복 선언하지 않는다.
 
 ```html
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
