@@ -340,7 +340,7 @@ HTML 파일은 반드시 인코딩 정보를 선언한다. 기본 인코딩은 u
 <meta charset="utf-8">
 ```
 
-HTML 4.01 DTD 사용 예시는 다음과 같고, HTML 5의 것과 중복 선언하지 않는다.
+HTML 4.01 DTD 사용 예시는 다음과 같고, HTML 타 버전의 것과 중복되지 않게 선언한다.
 
 ```html
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
