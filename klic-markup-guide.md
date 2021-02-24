@@ -250,7 +250,7 @@ class의 단어와 단어를 이을 때 ```_``` 기호를 사용하거나 단어
 
 ### 2.1. 유효성 오류 없는 HTML 파일
 
-모든 HTML 파일의 최종본은 [W3C Validatation](https://validator.w3.org/unicorn/?ucn_lang=ko)를 이용한 유효성 검사를 통과해야 한다. 검사 결과에서 수정하지 않아도 되는 경고/오류가 있는 경우 무시할 수 있다. 로컬 환경에서 검사하려면 [이곳](https://validator.w3.org/nu/)을 이용한다.
+모든 HTML 파일의 최종본은 [W3C Validatation](https://validator.w3.org/unicorn/?ucn_lang=ko)를 이용한 유효성 검사를 통과해야 한다. 검사 결과에서 수정하지 않아도 되는 경고/오류 사항이 있는 경우 무시할 수 있다. 로컬 환경에서 검사하려면 [이곳](https://validator.w3.org/nu/)을 이용한다.
 
 #### 2.1.1. 자주 검출되는 오류
 
@@ -438,7 +438,7 @@ Heading 태그는 순서에 맞게 사용한다.
 
 ### 3.1. 유효성 오류 없는 CSS 파일
 
-모든 CSS 파일의 최종본은 [W3C Validatation](https://validator.w3.org/unicorn/?ucn_lang=ko)를 이용한 유효성 검사를 통과해야 한다. 검사 결과에서 수정하지 않아도 되는 경고/오류가 있는 경우 무시할 수 있다. 로컬 환경에서 검사하려면 [이곳](https://validator.w3.org/nu/)을 이용한다.
+모든 CSS 파일의 최종본은 [W3C Validatation](https://validator.w3.org/unicorn/?ucn_lang=ko)를 이용한 유효성 검사를 통과해야 한다. 검사 결과에서 수정하지 않아도 되는 경고/오류 사항이 있는 경우 무시할 수 있다. 로컬 환경에서 검사하려면 [이곳](https://validator.w3.org/nu/)을 이용한다.
 
 #### 3.1.1. 자주 검출되는 오류
 
@@ -457,7 +457,7 @@ CSS 주석은 다음과 같이 표기하며, 주석 기호와 내용 사이에 �
 /* 내용 */
 ```
 
-각 요소의 하위 그룹에 대한 주석은 다음과 같이 ```*``` 기호의 개수로 구분을 지어준다.
+각 객체의 하위 그룹에 대한 주석은 다음과 같이 ```*``` 기호의 개수로 구분을 지어준다.
 
 ```css
 /* gnb */
@@ -583,7 +583,7 @@ CSS 코드를 작성할 때는 들여쓰기를 하지 않는다. 단, 선택자�
 7|테두리|border (그룹)| -
 8|폰트|font (그룹)|font-size, color, letter-spacing, text-align, text-decoration, text-indent, vertical-align, white-space 등 선언 순서는 무관함
 9|배경|background (그룹)| -
-10|기타|-|위에 언급되지 않은 나머지 속성들로 배경의 관련 속성 이후에 선언하며, 기타 속성 내의 선언 순서는 무관함
+10|기타|-|위에 언급되지 않은 나머지 속성들로 ```background``` 속성 이후에 선언하며, 기타 속성 내의 선언 순서는 무관함
 
 ### 3.8. 마지막 속성의 세미콜론 표기
 
