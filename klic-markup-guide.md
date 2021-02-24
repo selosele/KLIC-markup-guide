@@ -39,6 +39,7 @@
   - [3.9. 속성값 축약](#39-속성값-축약)
   - [3.10. z-index 허용 선언값](#310-z-index-허용-선언값)
   - [3.11. !important 속성 사용 금지](#311-important-속성-사용-금지)
+  - [3.12. 특정 클래스명 사용 금지](#312-특정-클래스명-사용-금지)
 - [참고 사이트](#참고-사이트)
     
 ---
@@ -63,7 +64,9 @@
 
 ### 1.1. 작업자 정보 표기
 
-퍼블리싱 산출물(CSS/JS)에 대한 최초 작성자/수정자를 표기하는 규칙은 아래와 같은 방식을 따르며, 산출물 최상단 CSS 인코딩 선언과 ```@import``` 구문 다음 줄에 표기한다.
+퍼블리싱 파일(CSS/JS)에 대한 최초 작성자/수정자를 표기하는 규칙은 다음과 같은 방식을 따르며, 파일 최상단에 표기한다.
+
+CSS 파일은 최상단 CSS 인코딩 선언과 ```@import``` 구문 다음 줄에 표기한다.
 
 ```css
 @charset "utf-8";
@@ -75,11 +78,9 @@ Edit : hong gil dong, 2020. 12. 11.
 -------------------------------------------------*/
 ```
 
-최초 작성자명을 ```Author```에, 최초 작성일은 ```Create date```에 표기한다. 다른 이가 작성한 파일을 전체적으로 수정해야 하는 경우 마지막 단락에 ```Edit```를 추가, 작업자명과 날짜를 표기한다.
+최초 작성자명(자신의 영문 이름/이니셜)을 ```Author```에, 최초 작성일은 ```Create date```에 표기한다. 다른 이가 작성한 파일을 전체적으로 수정해야 하는 경우 마지막 단락에 ```Edit```를 추가, 작업자명과 날짜를 표기한다.
 
-작업자명은 풀네임/이니셜 등 제한을 두지 않으나 누구나 알아볼 수 있게 직관적으로 작성해야 한다.
-
-산출물의 특정 부분을 수정했을 때는 다음과 같이 **날짜 작업자명, 내용** 순서로 표기한다.
+파일의 특정 부분을 수정했을 때는 다음과 같이 **날짜 작업자명, 내용** 순서로 표기한다.
 
 ```css
 .gnb { display: block; width: 100%; } /* 2020.12.10. sehyun oh, 이러저러한 문제로 틀어지는 현상 수정 */
@@ -130,13 +131,29 @@ sub.js|서브 레이아웃 및 서브 콘텐츠
 
 **서브 콘텐츠**
 
-이미지 파일명은 **img메뉴뎁스명_번호** 표기법을 따른다. 아래는 sub0104.html 파일에 들어가는 두 장의 이미지에 대한 네이밍을 예시로 들어보았다.
+이미지 파일명 표기법은 아래 두 가지 표기법 중 하나를 선택하여 사용한다.
 
-```html
-<!-- 한 개밖에 없어도 01을 표기한다. -->
-img0104_01.png
-img0104_02.png
-```
+- **img메뉴뎁스명_번호** 표기법
+
+  다음은 sub0104.html 파일에 들어가는 이미지명 예시이다.
+
+  ```html
+  <!-- 한 개밖에 없어도 01을 표기한다. -->
+  img0104_01.png
+  img0104_02.png
+  ```
+
+- **페이지명 줄임말_이미지 의미** 표기법
+
+  ```html
+  <!-- 인사말(greeting) 페이지 이미지명 예시 -->
+  grt_img.png
+  grt_ico.png
+
+  <!-- 조직도(organization) 페이지 이미지명 예시 -->
+  org_img.png
+  org_line.png
+  ```
 
 **그 외**
 
@@ -166,7 +183,7 @@ btn_more.png (O)
 
 ![기본 메인 템플릿 레이아웃 구조](assets/images/template_layout.png)
 
-```.MC_wrap```과 ```.MC_box```는 개수에 제한이 없고, 한 개밖에 없어도 숫자 1을 표기하며, 디자인 상 ```.MC_box```를 감쌀 필요 없을 경우 ```.MC_wrap```을 생략할 수 있다. ```.MC_box```에 들어가는 각 위젯의 클래스명은 아래와 같다.
+```.MC_wrap```과 ```.MC_box```는 개수에 제한이 없고, 한 개밖에 없어도 숫자 1을 표기하며, 디자인 상 ```.MC_box```를 감쌀 필요 없을 경우 ```.MC_wrap```을 생략할 수 있다. ```.MC_box```에 들어가는 각 위젯의 클래스명은 다음과 같다.
 
 클래스명|용도
 --- | ---
@@ -201,6 +218,9 @@ btn_more.png (O)
 ```html
 <div class="tabStyle type1"></div>
 <div class="tabStyle type2"></div>
+
+<div class="tabStyle typeA"></div>
+<div class="tabStyle typeB"></div>
 ```
 
 **독립 확장 클래스**
@@ -210,6 +230,9 @@ btn_more.png (O)
 ```html
 <div class="tabStyle1"></div>
 <div class="tabStyle2"></div>
+
+<div class="tabStyleA"></div>
+<div class="tabStyleB"></div>
 ```
 
 ### 1.3. 크로스브라우징 범위
@@ -249,13 +272,13 @@ A document must not include both a meta element with an http-equiv attribute who
 
 ### 2.2. 주석 표기
 
-HTML 주석은 아래와 같이 표기하며, 주석 기호와 내용 사이에 한 칸의 공백을 둔다.
+HTML 주석은 다음과 같이 표기하며, 주석 기호와 내용 사이에 한 칸의 공백을 둔다.
 
 ```html
 <!-- 내용 -->
 ```
 
-HTML 주석의 시작/종료 주석은 아래와 같이 표기하며, 종료 주석의 슬래시 기호와 내용 사이에는 공백을 두지 않는다.
+HTML 주석의 시작/종료 주석은 다음과 같이 표기하며, 종료 주석의 슬래시 기호와 내용 사이에는 공백을 두지 않는다.
 
 ```html
 <!-- header -->
@@ -430,10 +453,23 @@ CSS: Parse Error.|속성 선언 시 콜론 ```:``` 누락 또는 중괄호 ```{}
 
 ### 3.2. 주석 표기
 
-CSS 주석은 아래와 같이 표기하며, 주석 기호와 내용 사이에 한 칸의 공백을 둔다.
+CSS 주석은 다음과 같이 표기하며, 주석 기호와 내용 사이에 한 칸의 공백을 둔다.
 
 ```css
 /* 내용 */
+```
+
+각 요소의 하위 그룹에 대한 주석은 다음과 같이 ```*``` 기호의 개수로 구분을 지어준다.
+
+```css
+/* gnb */
+.gnb { }
+
+/** 2차메뉴 **/
+.gnb .depth2 { }
+
+/*** 3차메뉴 ***/
+.gnb .depth3 { }
 ```
 
 ### 3.3. 빈 줄
@@ -513,10 +549,10 @@ CSS 코드를 작성할 때는 들여쓰기를 하지 않는다. 단, 선택자�
 /* gnb */
 .gnb { }
 
-/* 2차메뉴 */
+/** 2차메뉴 **/
 .gnb .depth2 { }
 
-/* 3차메뉴 */
+/*** 3차메뉴 ***/
 .gnb .depth3 { }
 
 @media print {
@@ -621,9 +657,42 @@ z-index 속성 선언값의 쉬운 파악을 위해 최소값과 최대값, 증�
 
 - [CSS 적용 우선순위](https://opentutorials.org/module/484/4149) - opentutorials.org
 
+### 3.12. 특정 클래스명 사용 금지
+
+다음과 같은 클래스명 사용을 금지한다.
+
+```html
+<h3 class="tit1 mgt30"><h3>
+
+<div class="box_st1 mgt10"></div>
+```
+
+```css
+.mgt30 { margin-top:1.5rem; }
+.mgt10 { margin-top:0.5rem; }
+```
+
+```width``` 또는 ```margin``` 등의 속성값을 위와 같은 클래스명에 정의하고 사용하면, 추후 수정이 필요할 경우 해당 클래스명이 사용된 수많은 페이지에 가서 일일이 수정/삭제를 해야 하는 상황이 발생할 수 있다.
+
+다음과 같이 HTML 태그에 클래스명을 사용하지 않고 해당되는 요소에만 외부 CSS 파일에서 스타일을 정의하는 방식을 사용한다.
+
+```html
+<h3 class="tit1"><h3>
+
+<div class="box_st1"></div>
+```
+
+```css
+.tit1 { margin-top:1.5rem; }
+
+.tit1 + .box_st1 { margin-top:0.5rem; }
+```
+
+이 방식으로 처리가 안되는 예외적인 상황에만 해당 클래스명을 사용한다.
+
 ---
 
 ## 참고 사이트
 
-* [NHN 코딩 컨벤션](https://nuli.navercorp.com/data/convention/NHN_Coding_Conventions_for_Markup_Languages.pdf)
-* [KLIC 퍼블리싱 스타일가이드](https://klic.co.kr/design2021/)
+- [NHN 코딩 컨벤션](https://nuli.navercorp.com/data/convention/NHN_Coding_Conventions_for_Markup_Languages.pdf)
+- [KLIC 퍼블리싱 스타일가이드](https://klic.co.kr/design2021/)
