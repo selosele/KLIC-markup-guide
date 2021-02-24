@@ -213,14 +213,14 @@ btn_more.png (O)
 
 **종속 확장 클래스**
 
-기본형 클래스에 종속되어 여백, 색깔, 행간 등의 몇 가지 속성을 부여하고자 할 때 사용하는 클래스. 다음은 ```tabStyle``` 클래스 확장 예시이다.
+기본형 클래스에 종속되어 여백, 색깔, 행간 등의 몇 가지 속성을 부여하고자 할 때 사용하는 클래스. 다음은 ```chart_wrap``` 클래스 확장 예시이다.
 
 ```html
-<div class="tabStyle type1"></div>
-<div class="tabStyle type2"></div>
+<div class="chart_wrap type1"></div>
+<div class="chart_wrap type2"></div>
 
-<div class="tabStyle typeA"></div>
-<div class="tabStyle typeB"></div>
+<div class="chart_wrap typeA"></div>
+<div class="chart_wrap typeB"></div>
 ```
 
 **독립 확장 클래스**
@@ -228,11 +228,11 @@ btn_more.png (O)
 기본형 클래스의 변형이 type으로 분류할 만큼 클 경우 사용하는 클래스로, 작성 예시는 다음과 같다.
 
 ```html
-<div class="tabStyle1"></div>
-<div class="tabStyle2"></div>
+<div class="chart_wrap1"></div>
+<div class="chart_wrap2"></div>
 
-<div class="tabStyleA"></div>
-<div class="tabStyleB"></div>
+<div class="chart_wrapA"></div>
+<div class="chart_wrapB"></div>
 ```
 
 ### 1.3. 크로스브라우징 범위
