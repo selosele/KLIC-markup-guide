@@ -389,7 +389,7 @@ DTD 및 인코딩을 선언한 예시는 다음과 같다.
 HTML 태그에 속성 선언 시 ```class```, ```style``` 속성을 제일 마지막에 선언한다.
 
 ```html
-<a href="" title="새창" target="_blank" id="btn" class="btn" style="width: auto;"></a>
+<a href="" title="새창" target="_blank" id="btn" class="btn" style=""></a>
 ```
 
 ### 2.7. 특수기호 변환
@@ -672,7 +672,7 @@ z-index 속성 선언값의 쉬운 파악을 위해 최소값과 최대값, 증�
 
 ```width``` 또는 ```margin``` 등의 속성값을 위와 같은 class에 정의하고 사용하면, 추후 수정이 필요할 경우 해당 class가 사용된 수많은 페이지에 가서 일일이 수정/삭제를 해야 하는 상황이 발생할 수 있다.
 
-다음과 같이 HTML 태그에 class를 사용하지 않고 외부 CSS 파일에서 스타일을 정의하는 방식을 사용한다.
+다음과 같이 HTML 태그에 class를 사용하지 않고 CSS 파일에서 스타일을 정의하는 방식을 사용한다.
 
 ```html
 <h3 class="tit1"><h3>
