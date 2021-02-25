@@ -97,8 +97,8 @@ Edit : hong gil dong, 2020. 12. 11.
 index.html|메인
 guide.html|서브 레이아웃 및 스타일가이드
 sub.html|스타일가이드 페이지 없이 서브 레이아웃만 있는 경우
-sub0104_인사말.html|서브콘텐츠 파일명 예시로, ```첫 번째 1depth → 네 번째 2depth → 인사말 페이지```의 순서로 표기
-sub0104_tab01_인사말.html|위의 예시에서 네 번째 2depth의 페이지 이동 탭으로 나뉜 페이지의 경우, ```tab```의 번호로 구분
+sub0104_인사말.html|서브콘텐츠 파일명 예시로, ```첫 번째 1depth → 네 번째 2depth → 페이지명```의 순서로 표기
+sub0104_tab01_인사말.html|위의 예시에서 네 번째 2depth의 페이지 이동 탭으로 나뉜 페이지의 경우, ```tab``` 번호로 구분
 
 **CSS**
 
@@ -390,7 +390,7 @@ DTD 및 인코딩을 선언한 예시는 다음과 같다.
 
 ### 2.6. 속성 선언 순서
 
-HTML 태그에 속성 선언 시 ```class```, ```style``` 속성을 제일 마지막에 선언한다.
+HTML 태그에 속성 선언 시 ```class```, ```style``` 속성을 마지막에 선언한다.
 
 ```html
 <a href="" title="새창" target="_blank" id="btn" class="btn" style=""></a>
