@@ -116,7 +116,7 @@ con_com.css|서브 콘텐츠 공통 요소
 board.css|게시판/로그인 폼
 sub.css|서브 레이아웃 및 서브 공통 콘텐츠
 sub_cnt.css|템플릿 서브 콘텐츠
-popup.css|새창 팝업
+popup.css|새 창 팝업
 
 **JS**
 
@@ -264,10 +264,10 @@ ID의 단어와 단어를 이을 때 ```_``` 기호를 사용하거나 단어의
 
 오류메시지|방안
 --- | ---
-Duplicate ID ```gnb```.| 한 페이지에서 동일한 ID값(예 : gnb)이 중복되어 오류가 발생하므로 동일한 ID는 한 페이지에서 중복 사용되면 안된다.
+Duplicate ID ```gnb```.| 한 페이지에서 동일한 ID값(예 : gnb)이 중복되어 오류가 발생하므로 동일한 ID는 한 페이지에서 중복 사용되면 안 된다.
 Duplicate attribute ```class```.|```<div class="" class=""></div>``` 예시처럼 HTML의 개별 요소에 같은 속성(예 : class)이 중복 선언되어 발생하는 오류로, 하나만 선언하도록 한다.
 No space between attributes.|HTML의 개별 요소에 선언한 속성 간 띄어쓰기가 누락되어 발생하는 오류. ```<img src="bg.png"alt="">``` img 태그의 src 속성과 alt 속성 사이에 띄어쓰기로 구분되어 있지 않다.
-An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.|img 태그에 alt 속성이 누락되어 발생하는 오류. ```<img src="bg.png">``` 이렇게 alt에 쓸 내용이 없다고 해서 alt 속성을 누락시키면 안되고, ```<img src="bg.png" alt="">``` 반드시 빈 alt 값을 선언해야 한다.
+An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.|img 태그에 alt 속성이 누락되어 발생하는 오류. ```<img src="bg.png">``` 이렇게 alt에 쓸 내용이 없다고 해서 alt 속성을 누락시키면 안 되고, ```<img src="bg.png" alt="">``` 반드시 빈 alt 값을 선언해야 한다.
 The value of the for attribute of the label element must be the ID of a non-hidden form control.|label 태그의 for 속성값과 매칭되는 ID값을 가진 요소가 없어서 발생하는 오류. ```<label for="element"></label> <input type="text" id="element">``` 예시처럼 반드시 label과 상호작용할 요소에 for 값과 매칭되는 ID 값을 선언해주어야 한다.
 td start tag in table body.|table 태그의 td 또는 th 태그의 부모 요소인 tr 태그가 누락되어 발생하는 오류.
 Table cell spans past the end of its row group established by a tbody element; clipped to the end of the row group.|table 태그 th 또는 td 태그의 rowspan/colspan 수치가 맞지 않아 발생하는 오류. 수치가 맞지 않으면 틀어져 보이므로 반드시 수치를 확인한다.
@@ -681,9 +681,9 @@ font-size: 0.9rem (O)
 
 ### 3.11. z-index 허용 선언값
 
-z-index 속성 선언값의 쉬운 파악을 위해 최소값과 최대값, 증감 단위를 정한다.
+z-index 속성 선언값의 쉬운 파악을 위해 최솟값과 최댓값, 증감 단위를 정한다.
 
-최소값 1, 최대값 1000이고 5 단위로 증감하며, ```-1```과 기본값인 ```auto```는 예외적으로 사용할 수 있다. 단, 5 단위 사이의 예외 변수가 발생하면 1 단위의 값을 지정할 수 있다. 레이어 팝업처럼 시각적으로 제일 위에 보여야 하는 경우 최대값을 지정한다.
+최솟값 1, 최댓값 1000이고 5 단위로 증감하며, ```-1```과 기본값인 ```auto```는 예외적으로 사용할 수 있다. 단, 5 단위 사이의 예외 변수가 발생하면 1 단위의 값을 지정할 수 있다. 레이어 팝업처럼 시각적으로 제일 위에 보여야 하는 경우 최댓값을 지정한다.
 
 ```css
 .class { z-index: 1; }
@@ -693,12 +693,12 @@ z-index 속성 선언값의 쉬운 파악을 위해 최소값과 최대값, 증�
 
 ### 3.12. !important 속성 사용 금지
 
-```!important``` 속성은 자연스러운 스타일 우선순위를 무시하고 가장 높은 우선 순위를 가지게 한다. 이로 인해 우선순위가 꼬여서 수정 및 유지보수 작업에 애로사항이 있을 수 있으니 절대 사용하지 않도록 하며, 스타일 우선순위 규칙에 맞게 CSS 코드를 작성한다.
+```!important``` 속성은 자연스러운 스타일 우선순위를 무시하고 가장 높은 우선순위를 가지게 한다. 이로 인해 우선순위가 꼬여서 수정 및 유지보수 작업에 애로사항이 있을 수 있으니 절대 사용하지 않도록 하며, 스타일 우선순위 규칙에 맞게 CSS 코드를 작성한다.
 
 다음과 같은 예외사항이 존재할 수 있다.
 
 - ```<col>``` 태그의 style 속성에 선언된 ```width```값을 조절해야 할 경우 ```!important``` 속성 사용 가능
-- JS에서 정의된 스타일은 CSS 파일보다 높은 우선 순위를 가지므로 ```!important``` 속성으로 조정 가능
+- JS에서 정의된 스타일은 CSS 파일보다 높은 우선순위를 가지므로 ```!important``` 속성으로 조정 가능
 
 **참고**
 
@@ -735,7 +735,7 @@ z-index 속성 선언값의 쉬운 파악을 위해 최소값과 최대값, 증�
 .tit1 + .box_st1 { margin-top:0.5rem; }
 ```
 
-이 방식으로 처리가 안되는 예외적인 상황에만 해당 class를 사용한다.
+이 방식으로 처리가 안 되는 예외적인 상황에만 해당 class를 사용한다.
 
 ---
 
