@@ -662,19 +662,23 @@ CSS 가독성 향상을 위해 다음과 같이 속성값을 축약한다.
 **축약 전**
 
 ```css
-top: 0px
-margin: 2rem 2rem 2rem 2rem
-padding: 2rem 3rem 2rem 3rem
-color: #ffffff
+.class {
+  top: 0px;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 2rem 3rem 2rem 3rem;
+  color: #ffffff;
+}
 ```
 
 **축약 후**
 
 ```css
-top: 0 /* 속성값이 0일 경우 단위를 표기하지 않는다. */
-margin: 2rem
-padding: 2rem 3rem /* 상하좌우의 속성값이 동일하면 축약한다. */
-color: #fff
+.class {
+  top: 0; /* 속성값이 0일 경우 단위를 표기하지 않는다. */
+  margin: 2rem;
+  padding: 2rem 3rem; /* 상하좌우의 속성값이 동일하면 축약한다. */
+  color: #fff;
+}
 ```
 
 소수점 단위에서 0이 앞에 위치하는 경우에는 가독성을 위해 0을 표기한다.
