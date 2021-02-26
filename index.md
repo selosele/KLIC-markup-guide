@@ -684,8 +684,8 @@ CSS 가독성 향상을 위해 다음과 같이 속성값을 축약한다.
 소수점 단위에서 0이 앞에 위치하는 경우에는 가독성을 위해 0을 표기한다.
 
 ```css
-font-size: .9rem (X)
-font-size: 0.9rem (O)
+.class { font-size: .9rem } (X)
+.class { font-size: 0.9rem } (O)
 ```
 
 ### 3.11. z-index 허용 선언값
@@ -724,8 +724,8 @@ z-index 속성 선언값의 쉬운 파악을 위해 최솟값과 최댓값, 증�
 ```
 
 ```css
-.mgt30 { margin-top:1.5rem; }
-.mgt10 { margin-top:0.5rem; }
+.mgt30 { margin-top: 1.5rem; }
+.mgt10 { margin-top: 0.5rem; }
 ```
 
 ```width``` 또는 ```margin``` 등의 속성값을 위와 같은 class에 정의하고 사용하면, 추후 수정이 필요할 경우 해당 class가 사용된 수많은 페이지에 가서 일일이 수정/삭제를 해야 하는 상황이 발생할 수 있다.
@@ -739,9 +739,9 @@ z-index 속성 선언값의 쉬운 파악을 위해 최솟값과 최댓값, 증�
 ```
 
 ```css
-.tit1 { margin-top:1.5rem; }
+.tit1 { margin-top: 1.5rem; }
 
-.tit1 + .box_st1 { margin-top:0.5rem; }
+.tit1 + .box_st1 { margin-top: 0.5rem; }
 ```
 
 이 방식으로 처리가 안 되는 예외적인 상황에만 해당 class를 사용한다.
