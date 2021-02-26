@@ -162,8 +162,10 @@ sub.js|서브 레이아웃 및 서브 콘텐츠
 ```html
 btn_more.png
 btn_close_on.png
+
+<!-- 동일한 이름의 경우 숫자로 구분해준다. -->
 btn_search_01.png
-btn_search_02.png <!-- 동일한 이름의 경우 숫자로 구분해준다. -->
+btn_search_02.png
 ```
 
 그리고 이미지 확장자는 반드시 소문자로 저장한다.
