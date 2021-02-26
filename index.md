@@ -114,7 +114,7 @@ con_com.css|서브 콘텐츠 공통 요소
 board.css|게시판/로그인 폼
 sub.css|서브 레이아웃 및 서브 공통 콘텐츠
 sub_cnt.css|템플릿 서브 콘텐츠
-popup.css|새 창 팝업
+popup.css|새창 팝업
 
 **JS**
 
