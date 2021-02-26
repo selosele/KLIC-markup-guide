@@ -258,6 +258,10 @@ ID의 단어와 단어를 이을 때 ```_``` 기호를 사용하거나 단어의
 
 모든 HTML 파일의 최종본은 [W3C Validatation](https://validator.w3.org/unicorn/?ucn_lang=ko)를 이용한 유효성 검사를 통과해야 한다. 검사 결과에서 수정하지 않아도 되는 경고/오류 사항이 있는 경우 무시할 수 있다. 로컬 환경에서 검사하려면 [이곳](https://validator.w3.org/nu/)을 이용한다.
 
+HTML 5 DTD 선언 시 다음 오류 내용은 허용한다.
+
+- ```<iframe>``` 태그의 frameborder, marginwidth, marginheight, scrolling 속성
+
 #### 2.1.1. 자주 검출되는 오류
 
 다음은 KLIC 퍼블리싱 산출물에서 자주 검출되는 오류 목록이다. 개발이 완료된 후에 오류가 발생하는 경우가 더 많으니 유의한다.
