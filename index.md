@@ -81,7 +81,8 @@ Edit : hong gil dong, 2020. 12. 11.
 파일의 특정 부분을 수정했을 때는 다음과 같이 **&lt;날짜 작업자명, 내용&gt;** 순서로 표기한다.
 
 ```css
-.gnb { display: block; width: 100%; } /* 2020.12.10. sehyun oh, IE 버그로 틀어지는 현상 수정 */
+/* 2020.12.10. sehyun oh, IE 버그로 틀어지는 현상 수정 */
+.gnb { display: block; width: 100%; }
 ```
 
 ### 1.2. 네이밍
