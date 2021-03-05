@@ -9,6 +9,6 @@
 
 ### 편집 권한
 
-이름|권한|Github 사용자명|Git branch
---- | --- | --- | ---
-오세현|가이드 책임 및 편집|selosele|master
+이름|Github 사용자명|Git branch
+--- | --- | ---
+오세현|selosele|master
