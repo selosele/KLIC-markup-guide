@@ -83,7 +83,7 @@ Edit : hong gil dong, 2020. 12. 11.
 
 ```css
 /* 2020.12.10. sehyun oh, IE 버그로 틀어지는 현상 수정 */
-.gnb { display: block; width: 100%; }
+.gnb {display: block; width: 100%;}
 ```
 
 ### 1.2. 네이밍
@@ -457,11 +457,11 @@ HTML의 개별 요소에 속성 선언 시 ```class```, ```style``` 속성을 �
 
 ```<section>``` 태그 또는 ```<article>``` 태그는 HTML 문서의 독립적인 구획을 나타내는 데 사용한다.
 
-사용 시 반드시 제목 태그(h1 ~ h6)를 포함시켜 웹 접근성 측면에서 각 구획을 식별할 수 있게 해야 한다.
+사용 시 반드시 다음과 같이 제목 태그(h1 ~ h6)를 포함시켜 웹 접근성 측면에서 각 구획을 식별할 수 있게 해야 한다.
 
 ```html
 <section>
-  <h2>공지사항</h2>
+    <h2>공지사항</h2>
 </section>
 ```
 
@@ -469,7 +469,7 @@ HTML의 개별 요소에 속성 선언 시 ```class```, ```style``` 속성을 �
 
 ```html
 <section>
-  <h2 class="sr-only">공지사항</h2>
+    <h2 class="sr-only">공지사항</h2>
 </section>
 ```
 ---
@@ -488,8 +488,8 @@ HTML의 개별 요소에 속성 선언 시 ```class```, ```style``` 속성을 �
 
 오류메시지|방안
 --- | ---
-CSS: Parse Error.|속성 선언 시 콜론 ```:``` 누락 또는 중괄호 ```{}``` 누락되어 발생하는 오류. ```td { padding; 0.3rem 0.5rem; border-bottom: 1px solid #ccc;``` 예시를 보면 ```padding;```에 콜론 대신 세미콜론이 있고, 마지막 속성 선언 후 중괄호로 닫지 않았다.
-```padding```: Missing a semicolon before the property name ```border-bottom```.|속성값 사이에 세미콜론 ```;```이 누락되어 발생하는 오류. ```td { padding:0.3rem 0.5rem border-bottom:1px solid #ccc; }``` 예시를 보면 ```padding:0.3rem 0.5rem```과 ```border-bottom:1px solid #ccc``` 사이에 세미콜론이 누락되어 있다.
+CSS: Parse Error.|속성 선언 시 콜론 ```:``` 누락 또는 중괄호 ```{}``` 누락되어 발생하는 오류. ```td {padding; 0.3rem 0.5rem; border-bottom: 1px solid #ccc;``` 예시를 보면 ```padding;```에 콜론 대신 세미콜론이 있고, 마지막 속성 선언 후 중괄호로 닫지 않았다.
+```padding```: Missing a semicolon before the property name ```border-bottom```.|속성값 사이에 세미콜론 ```;```이 누락되어 발생하는 오류. ```td {padding:0.3rem 0.5rem border-bottom:1px solid #ccc;}``` 예시를 보면 ```padding:0.3rem 0.5rem```과 ```border-bottom:1px solid #ccc``` 사이에 세미콜론이 누락되어 있다.
 
 ### 3.2. 주석 표기
 
@@ -558,8 +558,8 @@ CSS 주석은 다음과 같이 표기하며, 주석 기호와 내용 사이에 �
 **올바른 예 : 파악하기 쉽게 한 줄에 작성**
 
 ```css
-.gnb { display: block; width: 100%; }
-.gnb .depth2 { width: 100%; }
+.gnb {display: block; width: 100%;}
+.gnb .depth2 {width: 100%;}
 ```
 
 그리고 쉼표로 구분되는 선택자 간 공백은 줄 바꿈을 해준다.
@@ -580,7 +580,7 @@ CSS 코드를 작성할 때는 들여쓰기를 하지 않는다. 단, 선택자�
   .gnb .depth2 {}
     .gnb .depth3 {}
 
-@media print { #header { display: none; } }
+@media print { #header {display: none;} }
 ```
 
 **올바른 예 : 영역을 구분하려면 줄 바꿈/주석을 사용한다.**
@@ -596,7 +596,7 @@ CSS 코드를 작성할 때는 들여쓰기를 하지 않는다. 단, 선택자�
 .gnb .depth3 {}
 
 @media print {
-    #header { display: none; }
+    #header {display: none;}
 }
 ```
 
@@ -620,7 +620,7 @@ CSS 선언 방식은 네 가지로 분류하며, 용도에 맞게 사용하되 *
   <head>
       ...
       <style>
-          .class1 { top: 0; left: 1rem; }
+          .class1 {top: 0; left: 1rem;}
       </style>
   </head>
   ```
@@ -664,13 +664,13 @@ CSS 선언 방식은 네 가지로 분류하며, 용도에 맞게 사용하되 *
 **잘못된 예**
 
 ```css
-.gnb { display: block; width: 100% }
+.gnb {display: block; width: 100%}
 ```
 
 **올바른 예**
 
 ```css
-.gnb { display: block; width: 100%; }
+.gnb {display: block; width: 100%;}
 ```
 
 ### 3.9. 속성값 축약
@@ -702,8 +702,8 @@ CSS 가독성 향상을 위해 다음과 같이 속성값을 축약한다.
 소수점 단위에서 0이 앞에 위치하는 경우에는 가독성을 위해 0을 표기한다.
 
 ```css
-.class { font-size: .9rem } (X)
-.class { font-size: 0.9rem } (O)
+.class {font-size: .9rem } (X)
+.class {font-size: 0.9rem } (O)
 ```
 
 ### 3.10. !important 속성 사용 지양
@@ -730,8 +730,8 @@ CSS 가독성 향상을 위해 다음과 같이 속성값을 축약한다.
 ```
 
 ```css
-.mgt30 { margin-top: 1.5rem; }
-.mgt10 { margin-top: 0.5rem; }
+.mgt30 {margin-top: 1.5rem;}
+.mgt10 {margin-top: 0.5rem;}
 ```
 
 ```width``` 또는 ```margin``` 등의 속성값을 위와 같은 class에 정의하고 사용하면, 추후 수정이 필요할 경우 해당 class가 사용된 수많은 페이지에 가서 일일이 수정/삭제를 해야 하는 상황이 발생할 수 있다.
@@ -745,9 +745,9 @@ CSS 가독성 향상을 위해 다음과 같이 속성값을 축약한다.
 ```
 
 ```css
-.tit1 { margin-top: 1.5rem; }
+.tit1 {margin-top: 1.5rem;}
 
-.tit1 + .box_st1 { margin-top: 0.5rem; }
+.tit1 + .box_st1 {margin-top: 0.5rem;}
 ```
 
 이 방식으로 처리가 안 되는 예외적인 상황에만 해당 class를 사용하고, 사용 시 충분한 이유를 주석에 표기하여 다른 작업자가 파악하는 데 문제 없도록 한다.
