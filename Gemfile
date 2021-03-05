@@ -8,7 +8,6 @@ gem "activesupport", ">= 4.1.11"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-paginate"
   gem "jekyll-sitemap"
   gem "jekyll-gist"
   gem "jekyll-feed"
