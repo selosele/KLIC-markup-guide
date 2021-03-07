@@ -106,7 +106,7 @@ sub0104_인사말(tab01_연혁).html|위의 예시에서 네 번째 2depth의 �
 파일명|용도
 --- | ---
 basic.css|공통 요소
-layout.css|공통 레이아웃(서브 포함)
+layout.css|메인/서브 레이아웃
 main.css|메인 콘텐츠
 main_widget.css|템플릿 메인 위젯
 main_cnt.css|템플릿 메인 커스터마이징 콘텐츠
@@ -123,11 +123,11 @@ popup.css|새창 팝업
 파일명|용도
 --- | ---
 common.js|공통 요소
-layout.js|공통 레이아웃
+layout.js|메인/서브 레이아웃
 main.js|메인 콘텐츠
 con_com.js|서브 콘텐츠 공통 요소
 board.js|게시판/로그인 폼
-sub.js|서브 레이아웃 및 서브 콘텐츠
+sub.js|서브 콘텐츠
 
 #### 1.2.2. 이미지 파일명
 
