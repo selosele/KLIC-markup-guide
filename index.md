@@ -114,10 +114,10 @@ main_cnt.css|템플릿 메인 커스터마이징 콘텐츠
 con_com.css|서브 콘텐츠 공통 요소
 board.css|게시판/로그인 폼
 sub.css|서브 콘텐츠
-sub_cnt.css|템플릿 서브 콘텐츠
+sub_cnt.css|템플릿 서브 커스터마이징 콘텐츠
 popup.css|새창 팝업
 
-```main_widget.css```와 ```main_cnt.css```는 템플릿 작업 시 생성한다.
+```main_widget.css```와 ```main_cnt.css```, ```sub_cnt.css```는 템플릿 작업 시 생성한다.
 
 **JS**
 
