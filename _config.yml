@@ -2,3 +2,4 @@ theme                    : jekyll-theme-cayman
 url                      : "https://selosele.github.io/KLIC-markup-guide/index.html"
 baseurl                  :
 repository               : "selosele/KLIC-markup-guide"
+locale                   : "ko"
